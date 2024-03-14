@@ -63,6 +63,16 @@ namespace Project_for_kids.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap blue_arrow_24 {
+            get {
+                object obj = ResourceManager.GetObject("blue-arrow-24", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap five {
             get {
                 object obj = ResourceManager.GetObject("five", resourceCulture);

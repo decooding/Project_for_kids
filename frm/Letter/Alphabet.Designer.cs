@@ -1,6 +1,6 @@
 ﻿namespace WinApp.frm
 {
-    partial class SecWin2
+    partial class Alphabet
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(113, 44);
+            pictureBox1.Location = new Point(219, 25);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(189, 140);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -52,14 +52,14 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
-            // SecWin2
+            // Alphabet
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(389, 270);
+            ClientSize = new Size(892, 367);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
-            Name = "SecWin2";
+            Name = "Alphabet";
             Text = "SecWin2";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

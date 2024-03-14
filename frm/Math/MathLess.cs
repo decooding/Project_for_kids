@@ -65,13 +65,6 @@ namespace WinApp.frm
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form2 form2 = new();
-            this.Hide();
-            form2.Show();
-        }
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             CheckAnswer(1);
@@ -93,6 +86,13 @@ namespace WinApp.frm
             pictureBox2.ImageLocation = Path.Combine(imagesFolderPath, $"{questions[currentImageIndex].ImageName}1.png");
             pictureBox3.ImageLocation = Path.Combine(imagesFolderPath, $"{questions[currentImageIndex].ImageName}2.png");
             pictureBox4.ImageLocation = Path.Combine(imagesFolderPath, $"{questions[currentImageIndex].ImageName}3.png");
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new();
+            this.Hide();
+            form2.Show();
         }
     }
 }

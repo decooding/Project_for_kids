@@ -36,9 +36,9 @@
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
-            button1 = new Button();
             pictureBox6 = new PictureBox();
             pictureBox7 = new PictureBox();
+            pictureBox8 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -46,6 +46,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             SuspendLayout();
             // 
             // imageList1
@@ -114,15 +115,6 @@
             pictureBox5.TabStop = false;
             pictureBox5.Click += pictureBox5_Click;
             // 
-            // button1
-            // 
-            button1.Location = new Point(19, 29);
-            button1.Name = "button1";
-            button1.Size = new Size(43, 38);
-            button1.TabIndex = 5;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
-            // 
             // pictureBox6
             // 
             pictureBox6.Image = Project_for_kids.Properties.Resources.five;
@@ -145,20 +137,33 @@
             pictureBox7.TabStop = false;
             pictureBox7.Click += pictureBox7_Click;
             // 
+            // pictureBox8
+            // 
+            pictureBox8.Image = Project_for_kids.Properties.Resources.blue_arrow_24;
+            pictureBox8.Location = new Point(12, 12);
+            pictureBox8.Name = "pictureBox8";
+            pictureBox8.Size = new Size(47, 41);
+            pictureBox8.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox8.TabIndex = 8;
+            pictureBox8.TabStop = false;
+            pictureBox8.Click += pictureBox8_Click;
+            // 
             // MathCount
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(599, 288);
+            Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
-            Controls.Add(button1);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "MathCount";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += MathCount_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
@@ -168,6 +173,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -180,8 +186,8 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
-        private Button button1;
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
+        private PictureBox pictureBox8;
     }
 }

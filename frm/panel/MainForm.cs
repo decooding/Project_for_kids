@@ -1,4 +1,5 @@
 using Program_for_kids.frm;
+using Project_for_kids.frm.Video;
 using WinApp.frm;
 using WinApp.frm.Login;
 using WinApp.frm.panel;
@@ -22,9 +23,9 @@ namespace Project_for_kids
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SecWin2 secWin2 = new SecWin2();
+            Alphabet secWin = new();
             this.Hide();
-            secWin2.Show();
+            secWin.Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -37,6 +38,13 @@ namespace Project_for_kids
         {
             LogIn logiform = new();
             logiform.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            VideoPanel videopanel = new();
+            this.Hide();
+            videopanel.Show();
         }
     }
 }

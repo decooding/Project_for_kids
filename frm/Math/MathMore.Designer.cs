@@ -32,9 +32,10 @@ namespace Program_for_kids.frm
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             label1 = new Label();
-            button1 = new Button();
+            pictureBox3 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -60,35 +61,40 @@ namespace Program_for_kids.frm
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold);
             label1.Location = new Point(265, 46);
             label1.Name = "label1";
             label1.Size = new Size(0, 30);
             label1.TabIndex = 2;
             // 
-            // button1
+            // pictureBox3
             // 
-            button1.Location = new Point(19, 14);
-            button1.Name = "button1";
-            button1.Size = new Size(43, 38);
-            button1.TabIndex = 3;
-            button1.UseVisualStyleBackColor = true;
-            button1.Click += button1_Click;
+            pictureBox3.Image = Project_for_kids.Properties.Resources.blue_arrow_24;
+            pictureBox3.Location = new Point(12, 12);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(53, 50);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 4;
+            pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // MathMore
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ActiveCaption;
             ClientSize = new Size(751, 330);
-            Controls.Add(button1);
+            Controls.Add(pictureBox3);
             Controls.Add(label1);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Name = "MathMore";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "MathMore";
             Load += MathMore_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -98,6 +104,6 @@ namespace Program_for_kids.frm
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private Label label1;
-        private Button button1;
+        private PictureBox pictureBox3;
     }
 }

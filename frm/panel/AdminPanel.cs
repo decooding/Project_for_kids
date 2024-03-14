@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Project_for_kids;
+using System;
 using System.Data;
 using System.Data.OleDb;
 using System.Windows.Forms;
@@ -8,6 +9,10 @@ namespace WinApp.frm.panel
     public partial class AdminPanel : Form
     {
         private readonly string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=base.accdb";
+        private OleDbCommand userSelectCommand;
+        private OleDbCommand resultSelectCommand;
+        private DataSet userDataSet;
+        private DataSet resultDataSet;
 
         public AdminPanel()
         {
@@ -22,14 +27,14 @@ namespace WinApp.frm.panel
                 {
                     connection.Open();
 
-                    OleDbCommand userSelectCommand = new("SELECT * FROM [User]", connection);
-                    OleDbCommand resultSelectCommand = new("SELECT * FROM [result]", connection);
+                    userSelectCommand = new OleDbCommand("SELECT * FROM [User]", connection);
+                    resultSelectCommand = new OleDbCommand("SELECT * FROM [request]", connection);
 
-                    OleDbDataAdapter userAdapter = new(userSelectCommand);
-                    OleDbDataAdapter resultAdapter = new(resultSelectCommand);
+                    OleDbDataAdapter userAdapter = new OleDbDataAdapter(userSelectCommand);
+                    OleDbDataAdapter resultAdapter = new OleDbDataAdapter(resultSelectCommand);
 
-                    DataSet userDataSet = new();
-                    DataSet resultDataSet = new();
+                    userDataSet = new DataSet();
+                    resultDataSet = new DataSet();
 
                     userAdapter.Fill(userDataSet, "UserTable");
                     resultAdapter.Fill(resultDataSet, "ResultTable");
@@ -41,6 +46,40 @@ namespace WinApp.frm.panel
                 {
                     MessageBox.Show(ex.Message);
                 }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            MainForm mainform = new MainForm();
+            this.Hide();
+            mainform.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                using (OleDbConnection connection = new OleDbConnection(connectionString))
+                {
+                    // Сохраняем изменения таблицы пользователей
+                    OleDbDataAdapter userAdapter = new OleDbDataAdapter(userSelectCommand);
+                    OleDbCommandBuilder userCommandBuilder = new OleDbCommandBuilder(userAdapter);
+                    userAdapter.SelectCommand.Connection = connection;
+                    userAdapter.Update(userDataSet, "UserTable");
+
+                    // Сохраняем изменения таблицы результатов
+                    OleDbDataAdapter resultAdapter = new OleDbDataAdapter(resultSelectCommand);
+                    OleDbCommandBuilder resultCommandBuilder = new OleDbCommandBuilder(resultAdapter);
+                    resultAdapter.SelectCommand.Connection = connection;
+                    resultAdapter.Update(resultDataSet, "ResultTable");
+
+                    MessageBox.Show("Изменения сохранены успешно.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка при сохранении изменений: " + ex.Message);
             }
         }
     }

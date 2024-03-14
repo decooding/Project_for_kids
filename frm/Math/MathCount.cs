@@ -65,13 +65,6 @@ namespace Uniclo.frm
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form2 form2 = new Form2();
-            this.Hide();
-            form2.Show();
-        }
-
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             CheckAnswer(0);
@@ -106,6 +99,13 @@ namespace Uniclo.frm
         {
             pictureBox1.ImageLocation = Path.Combine(imagesFolderPath, $"balyq4.png");
 
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new Form2();
+            this.Hide();
+            form2.Show();
         }
     }
 }

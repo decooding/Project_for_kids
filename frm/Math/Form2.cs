@@ -12,13 +12,6 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            MainForm mainform = new();
-            this.Hide();
-            mainform.Show();
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             MathCount mathcount = new();
@@ -45,6 +38,13 @@ namespace WinFormsApp1
             MathLess mathless = new();
             this.Hide();
             mathless.Show();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MainForm mainform = new();
+            this.Hide();
+            mainform.Show();
         }
     }
 }

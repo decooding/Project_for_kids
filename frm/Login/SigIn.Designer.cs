@@ -41,13 +41,15 @@
             label5 = new Label();
             linkLabel1 = new LinkLabel();
             label6 = new Label();
+            pictureBox1 = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(10, 281);
+            button1.Location = new Point(12, 296);
             button1.Name = "button1";
-            button1.Size = new Size(174, 31);
+            button1.Size = new Size(170, 31);
             button1.TabIndex = 0;
             button1.Text = "Тіркелу";
             button1.UseVisualStyleBackColor = true;
@@ -56,7 +58,7 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(10, 182);
+            label1.Location = new Point(12, 201);
             label1.Name = "label1";
             label1.Size = new Size(44, 15);
             label1.TabIndex = 1;
@@ -64,14 +66,14 @@
             // 
             // login
             // 
-            login.Location = new Point(57, 179);
+            login.Location = new Point(57, 198);
             login.Name = "login";
             login.Size = new Size(125, 23);
             login.TabIndex = 2;
             // 
             // fname
             // 
-            fname.Location = new Point(12, 92);
+            fname.Location = new Point(12, 114);
             fname.Name = "fname";
             fname.Size = new Size(131, 23);
             fname.TabIndex = 4;
@@ -79,7 +81,7 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(12, 74);
+            label2.Location = new Point(12, 96);
             label2.Name = "label2";
             label2.Size = new Size(63, 15);
             label2.TabIndex = 3;
@@ -87,7 +89,7 @@
             // 
             // lname
             // 
-            lname.Location = new Point(12, 136);
+            lname.Location = new Point(12, 160);
             lname.Name = "lname";
             lname.Size = new Size(172, 23);
             lname.TabIndex = 6;
@@ -95,7 +97,7 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(12, 118);
+            label3.Location = new Point(12, 142);
             label3.Name = "label3";
             label3.Size = new Size(30, 15);
             label3.TabIndex = 5;
@@ -103,7 +105,7 @@
             // 
             // age
             // 
-            age.Location = new Point(149, 92);
+            age.Location = new Point(149, 114);
             age.Name = "age";
             age.Size = new Size(35, 23);
             age.TabIndex = 8;
@@ -111,7 +113,7 @@
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(149, 74);
+            label4.Location = new Point(151, 96);
             label4.Name = "label4";
             label4.Size = new Size(33, 15);
             label4.TabIndex = 7;
@@ -119,7 +121,7 @@
             // 
             // password
             // 
-            password.Location = new Point(10, 231);
+            password.Location = new Point(11, 247);
             password.Name = "password";
             password.Size = new Size(172, 23);
             password.TabIndex = 10;
@@ -127,7 +129,7 @@
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(10, 213);
+            label5.Location = new Point(11, 229);
             label5.Name = "label5";
             label5.Size = new Size(64, 15);
             label5.TabIndex = 9;
@@ -136,7 +138,7 @@
             // linkLabel1
             // 
             linkLabel1.AutoSize = true;
-            linkLabel1.Location = new Point(13, 326);
+            linkLabel1.Location = new Point(15, 332);
             linkLabel1.Name = "linkLabel1";
             linkLabel1.Size = new Size(165, 15);
             linkLabel1.TabIndex = 11;
@@ -147,13 +149,24 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold);
-            label6.Location = new Point(57, 23);
+            label6.BackColor = SystemColors.ActiveCaption;
+            label6.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold);
+            label6.ForeColor = SystemColors.ControlLightLight;
+            label6.Location = new Point(32, 19);
             label6.Name = "label6";
-            label6.Size = new Size(88, 30);
+            label6.Size = new Size(132, 45);
             label6.TabIndex = 12;
             label6.Text = "Тіркелу";
             label6.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackColor = SystemColors.ActiveCaption;
+            pictureBox1.Location = new Point(-14, -7);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(226, 94);
+            pictureBox1.TabIndex = 13;
+            pictureBox1.TabStop = false;
             // 
             // SigIn
             // 
@@ -173,9 +186,11 @@
             Controls.Add(login);
             Controls.Add(label1);
             Controls.Add(button1);
+            Controls.Add(pictureBox1);
             Name = "SigIn";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "SigIn";
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -195,5 +210,6 @@
         private Label label5;
         private LinkLabel linkLabel1;
         private Label label6;
+        private PictureBox pictureBox1;
     }
 }

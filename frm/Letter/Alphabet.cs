@@ -6,11 +6,11 @@ using System.Windows.Forms;
 
 namespace WinApp.frm
 {
-    public partial class SecWin2 : Form
+    public partial class Alphabet : Form
     {
         private SoundPlayer soundPlayer;
 
-        public SecWin2()
+        public Alphabet()
         {
             InitializeComponent();
             soundPlayer = new SoundPlayer(@".\WinApp\sound\tts.wav");

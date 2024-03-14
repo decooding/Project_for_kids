@@ -59,14 +59,6 @@ namespace Program_for_kids.frm
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Form2 form2 = new();
-            this.Hide();
-            form2.Show();
-        }
-
-
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             CheckAnswer(0);
@@ -82,6 +74,13 @@ namespace Program_for_kids.frm
             pictureBox1.ImageLocation = Path.Combine(imagesFolderPath, $"{questions[currentImageIndex].ImageName}0.png");
             pictureBox2.ImageLocation = Path.Combine(imagesFolderPath, $"{questions[currentImageIndex].ImageName}1.png");
             pictureBox3.ImageLocation = Path.Combine(imagesFolderPath, $"{questions[currentImageIndex].ImageName}2.png");
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Form2 form2 = new();
+            this.Hide();
+            form2.Show();
         }
     }
 }

@@ -12,21 +12,19 @@ namespace WinApp.frm
 
         private void button1_Click(object sender, EventArgs e)
         {
-            SecWin2 secwin2 = new();
+            Alphabet secwin2 = new();
             this.Hide();
             secwin2.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            MainForm form1 = new();
-            this.Hide();
-            form1.Show();
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
-            Form form1 = new();
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MainForm form1 = new();
             this.Hide();
             form1.Show();
         }

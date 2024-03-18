@@ -78,11 +78,14 @@
             // 
             // button4
             // 
+            button4.BackColor = Color.Transparent;
+            button4.FlatStyle = FlatStyle.Flat;
+            button4.ForeColor = SystemColors.HotTrack;
             button4.Location = new Point(304, 12);
             button4.Name = "button4";
             button4.Size = new Size(34, 34);
             button4.TabIndex = 3;
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
             // button5
@@ -125,6 +128,7 @@
             Name = "MainForm";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            FormClosing += MainForm_FormClosing;
             ResumeLayout(false);
             PerformLayout();
         }

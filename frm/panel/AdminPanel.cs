@@ -1,8 +1,6 @@
 ﻿using Project_for_kids;
-using System;
 using System.Data;
 using System.Data.OleDb;
-using System.Windows.Forms;
 
 namespace WinApp.frm.panel
 {
@@ -49,38 +47,57 @@ namespace WinApp.frm.panel
             }
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int id = Convert.ToInt32(idTextBox.Text);
+            string login = loginTextBox.Text;
+            string password = passwordTextBox.Text;
+            string firstname = firstnameTextBox.Text;
+            string lastname = lastnameTextBox.Text;
+            int age = Convert.ToInt32(ageTextBox.Text);
+
+            try
+            {
+                // Создаем подключение к базе данных
+                using (OleDbConnection connection = new OleDbConnection(connectionString))
+                {
+                    connection.Open();
+                    // SQL-запрос для обновления данных
+                    string query = "UPDATE [User] SET [Login] = ?, [Password] = ?, [Firstname] = ?, [Lastname] = ?, [Age] = ? WHERE [id] = ?";
+                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    {
+                        // Параметризованный запрос для предотвращения SQL инъекций
+                        command.Parameters.AddWithValue("@p1", login);
+                        command.Parameters.AddWithValue("@p2", password);
+                        command.Parameters.AddWithValue("@p3", firstname);
+                        command.Parameters.AddWithValue("@p4", lastname);
+                        command.Parameters.AddWithValue("@p5", age);
+                        command.Parameters.AddWithValue("@p6", id);
+
+                        // Выполняем запрос
+                        int rowsAffected = command.ExecuteNonQuery();
+                        if (rowsAffected > 0)
+                        {
+                            MessageBox.Show("Данные успешно обновлены");
+                        }
+                        else
+                        {
+                            MessageBox.Show("Не удалось обновить данные");
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Ошибка: " + ex.Message);
+            }
+        }
+
         private void button2_Click(object sender, EventArgs e)
         {
             MainForm mainform = new MainForm();
             this.Hide();
             mainform.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                using (OleDbConnection connection = new OleDbConnection(connectionString))
-                {
-                    // Сохраняем изменения таблицы пользователей
-                    OleDbDataAdapter userAdapter = new OleDbDataAdapter(userSelectCommand);
-                    OleDbCommandBuilder userCommandBuilder = new OleDbCommandBuilder(userAdapter);
-                    userAdapter.SelectCommand.Connection = connection;
-                    userAdapter.Update(userDataSet, "UserTable");
-
-                    // Сохраняем изменения таблицы результатов
-                    OleDbDataAdapter resultAdapter = new OleDbDataAdapter(resultSelectCommand);
-                    OleDbCommandBuilder resultCommandBuilder = new OleDbCommandBuilder(resultAdapter);
-                    resultAdapter.SelectCommand.Connection = connection;
-                    resultAdapter.Update(resultDataSet, "ResultTable");
-
-                    MessageBox.Show("Изменения сохранены успешно.");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Ошибка при сохранении изменений: " + ex.Message);
-            }
         }
     }
 }

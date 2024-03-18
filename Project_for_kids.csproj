@@ -44,7 +44,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="resource\arip\" />
+    <Folder Include="resource\arip\img\" />
+    <Folder Include="resource\sound\" />
   </ItemGroup>
 
   <ItemGroup>

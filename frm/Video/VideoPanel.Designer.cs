@@ -31,11 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VideoPanel));
             MediaPlayer1 = new AxWMPLib.AxWindowsMediaPlayer();
             panel1 = new Panel();
-            panel6 = new Panel();
-            label9 = new Label();
-            linkLabel5 = new LinkLabel();
-            label10 = new Label();
-            pictureBox5 = new PictureBox();
             panel5 = new Panel();
             label7 = new Label();
             linkLabel4 = new LinkLabel();
@@ -60,8 +55,6 @@
             pictureBox6 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)MediaPlayer1).BeginInit();
             panel1.SuspendLayout();
-            panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             panel4.SuspendLayout();
@@ -87,7 +80,6 @@
             // 
             panel1.AutoScroll = true;
             panel1.BackColor = SystemColors.ScrollBar;
-            panel1.Controls.Add(panel6);
             panel1.Controls.Add(panel5);
             panel1.Controls.Add(panel4);
             panel1.Controls.Add(panel3);
@@ -96,58 +88,6 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(310, 342);
             panel1.TabIndex = 5;
-            panel1.Click += panel1_Click;
-            // 
-            // panel6
-            // 
-            panel6.BorderStyle = BorderStyle.FixedSingle;
-            panel6.Controls.Add(label9);
-            panel6.Controls.Add(linkLabel5);
-            panel6.Controls.Add(label10);
-            panel6.Controls.Add(pictureBox5);
-            panel6.Location = new Point(6, 398);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(276, 92);
-            panel6.TabIndex = 7;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(179, 44);
-            label9.Name = "label9";
-            label9.Size = new Size(62, 15);
-            label9.TabIndex = 3;
-            label9.Text = "Ұзақтығы:";
-            // 
-            // linkLabel5
-            // 
-            linkLabel5.AutoSize = true;
-            linkLabel5.Location = new Point(237, 44);
-            linkLabel5.Name = "linkLabel5";
-            linkLabel5.Size = new Size(28, 15);
-            linkLabel5.TabIndex = 2;
-            linkLabel5.TabStop = true;
-            linkLabel5.Text = "1:23";
-            // 
-            // label10
-            // 
-            label10.AutoSize = true;
-            label10.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label10.Location = new Point(176, 22);
-            label10.Name = "label10";
-            label10.Size = new Size(78, 20);
-            label10.TabIndex = 0;
-            label10.Text = "Қуырмаш";
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(3, 4);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(170, 82);
-            pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox5.TabIndex = 1;
-            pictureBox5.TabStop = false;
             // 
             // panel5
             // 
@@ -160,6 +100,7 @@
             panel5.Name = "panel5";
             panel5.Size = new Size(276, 92);
             panel5.TabIndex = 6;
+            panel5.Click += panel5_Click;
             // 
             // label7
             // 
@@ -211,6 +152,7 @@
             panel4.Name = "panel4";
             panel4.Size = new Size(276, 92);
             panel4.TabIndex = 5;
+            panel4.Click += panel4_Click;
             // 
             // label5
             // 
@@ -262,6 +204,7 @@
             panel3.Name = "panel3";
             panel3.Size = new Size(276, 92);
             panel3.TabIndex = 4;
+            panel3.Click += panel3_Click;
             // 
             // label3
             // 
@@ -313,6 +256,7 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(276, 92);
             panel2.TabIndex = 3;
+            panel2.Click += panel2_Click;
             // 
             // label2
             // 
@@ -342,7 +286,6 @@
             label1.Size = new Size(78, 20);
             label1.TabIndex = 0;
             label1.Text = "Қуырмаш";
-            label1.Click += panel1_Click;
             // 
             // pictureBox1
             // 
@@ -353,7 +296,6 @@
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 1;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += panel1_Click;
             // 
             // label11
             // 
@@ -390,12 +332,8 @@
             Name = "VideoPanel";
             SizeGripStyle = SizeGripStyle.Show;
             Text = "VideoPanel";
-            Load += VideoPanel_Load;
             ((System.ComponentModel.ISupportInitialize)MediaPlayer1).EndInit();
             panel1.ResumeLayout(false);
-            panel6.ResumeLayout(false);
-            panel6.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             panel5.ResumeLayout(false);
             panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
@@ -426,11 +364,6 @@
         private LinkLabel linkLabel2;
         private Label label4;
         private PictureBox pictureBox2;
-        private Panel panel6;
-        private Label label9;
-        private LinkLabel linkLabel5;
-        private Label label10;
-        private PictureBox pictureBox5;
         private Panel panel5;
         private Label label7;
         private LinkLabel linkLabel4;

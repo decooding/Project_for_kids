@@ -18,6 +18,18 @@ namespace WinApp.frm
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
+            Form3 form3 = new();
+            this.Hide();
+            form3.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
             try
             {
                 soundPlayer.Play();
@@ -28,11 +40,9 @@ namespace WinApp.frm
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void label3_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new();
-            this.Hide();
-            form3.Show();
+
         }
     }
 }

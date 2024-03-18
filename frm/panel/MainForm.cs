@@ -46,5 +46,10 @@ namespace Project_for_kids
             this.Hide();
             videopanel.Show();
         }
+
+        private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

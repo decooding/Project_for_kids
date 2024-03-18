@@ -83,6 +83,7 @@
             button2.TabIndex = 4;
             button2.Text = "Мәтін";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // Form3
             // 

@@ -1,4 +1,5 @@
 ﻿using Project_for_kids;
+using Project_for_kids.frm.Letter;
 
 
 namespace WinApp.frm
@@ -19,7 +20,9 @@ namespace WinApp.frm
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            Adder adder = new();
+            this.Hide();
+            adder.Show();
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
@@ -27,6 +30,13 @@ namespace WinApp.frm
             MainForm form1 = new();
             this.Hide();
             form1.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Matin matin= new();
+            this.Hide();
+            matin.Show();
         }
     }
 }

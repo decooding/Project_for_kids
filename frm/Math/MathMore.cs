@@ -34,7 +34,7 @@ namespace Program_for_kids.frm
             new Question { CorrectOptionIndex = 1, ImageName = "10", labeltext = "Қай тарелкеде алма көп?"}
         };
 
-        private string imagesFolderPath = "D:\\WinApp-for-kids-master\\resource\\san\\more\\";
+        private string imagesFolderPath = "G:\\Project_for_kids\\resource\\san\\more\\";
         private int counter = 0;
         private int currentImageIndex = 0;
 

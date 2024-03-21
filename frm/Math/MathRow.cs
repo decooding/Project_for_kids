@@ -23,7 +23,7 @@ namespace Program_for_kids.frm
             new Question { CorrectOptionIndex = 0, ImageName = "8" }
         };
 
-        private string imagesFolderPath = "D:\\WinApp-for-kids-master\\resource\\san\\row\\";
+        private string imagesFolderPath = "G:\\Project_for_kids\\resource\\san\\row\\";
         private int counter = 0;
         private int currentImageIndex = 0;
 

@@ -32,7 +32,7 @@ namespace Uniclo.frm
             new Question { CorrectOptionIndex = 3, ImageName = "rakushka3"}
         };
 
-        private string imagesFolderPath = "D:\\WinApp-for-kids-master\\resource\\san\\counter\\";
+        private string imagesFolderPath = "G:\\Project_for_kids\\resource\\san\\counter\\";
         private int counter = 0;
         private int currentImageIndex = 0; // Add this line to track the current image index
 

@@ -23,7 +23,7 @@ namespace Project_for_kids
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Alphabet secWin = new();
+            Form3 secWin = new();
             this.Hide();
             secWin.Show();
         }

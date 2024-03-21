@@ -107,6 +107,7 @@
             label2.Size = new Size(79, 49);
             label2.TabIndex = 3;
             label2.Text = "Әә";
+            label2.Click += label2_Click;
             // 
             // label3
             // 
@@ -132,6 +133,7 @@
             label4.Size = new Size(62, 50);
             label4.TabIndex = 5;
             label4.Text = "Вв";
+            label4.Click += label4_Click;
             // 
             // label5
             // 
@@ -144,6 +146,7 @@
             label5.Size = new Size(59, 52);
             label5.TabIndex = 6;
             label5.Text = "Гг";
+            label5.Click += label5_Click;
             // 
             // label6
             // 
@@ -156,6 +159,7 @@
             label6.Size = new Size(66, 52);
             label6.TabIndex = 7;
             label6.Text = "Ғғ";
+            label6.Click += label6_Click;
             // 
             // label7
             // 
@@ -168,6 +172,7 @@
             label7.Size = new Size(72, 52);
             label7.TabIndex = 8;
             label7.Text = "Дд";
+            label7.Click += label7_Click;
             // 
             // label8
             // 
@@ -180,6 +185,7 @@
             label8.Size = new Size(66, 52);
             label8.TabIndex = 9;
             label8.Text = "Ее";
+            label8.Click += label8_Click;
             // 
             // label9
             // 
@@ -192,6 +198,7 @@
             label9.Size = new Size(66, 52);
             label9.TabIndex = 10;
             label9.Text = "Ёё";
+            label9.Click += label9_Click;
             // 
             // label10
             // 
@@ -204,6 +211,7 @@
             label10.Size = new Size(71, 47);
             label10.TabIndex = 11;
             label10.Text = "Жж";
+            label10.Click += label10_Click;
             // 
             // label11
             // 
@@ -211,11 +219,12 @@
             label11.BackColor = Color.Tomato;
             label11.Font = new Font("Comic Sans MS", 24.75F, FontStyle.Bold | FontStyle.Italic);
             label11.ForeColor = Color.MidnightBlue;
-            label11.Location = new Point(101, 126);
+            label11.Location = new Point(92, 126);
             label11.Name = "label11";
             label11.Size = new Size(55, 47);
             label11.TabIndex = 12;
             label11.Text = "Зз";
+            label11.Click += label11_Click;
             // 
             // label12
             // 
@@ -223,12 +232,13 @@
             label12.BackColor = Color.Gold;
             label12.Font = new Font("Comic Sans MS", 21.75F, FontStyle.Bold | FontStyle.Italic);
             label12.ForeColor = Color.Red;
-            label12.Location = new Point(181, 126);
+            label12.Location = new Point(158, 126);
             label12.Name = "label12";
             label12.Padding = new Padding(1);
             label12.Size = new Size(60, 43);
             label12.TabIndex = 13;
             label12.Text = "Ии";
+            label12.Click += label12_Click;
             // 
             // label13
             // 
@@ -236,11 +246,12 @@
             label13.BackColor = Color.Tomato;
             label13.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label13.ForeColor = Color.MidnightBlue;
-            label13.Location = new Point(252, 126);
+            label13.Location = new Point(226, 126);
             label13.Name = "label13";
             label13.Size = new Size(74, 52);
             label13.TabIndex = 14;
             label13.Text = "Йй";
+            label13.Click += label13_Click;
             // 
             // label14
             // 
@@ -248,11 +259,12 @@
             label14.BackColor = Color.Tomato;
             label14.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label14.ForeColor = Color.MidnightBlue;
-            label14.Location = new Point(325, 126);
+            label14.Location = new Point(311, 126);
             label14.Name = "label14";
             label14.Size = new Size(63, 52);
             label14.TabIndex = 15;
             label14.Text = "Кк";
+            label14.Click += label14_Click;
             // 
             // label15
             // 
@@ -260,11 +272,12 @@
             label15.BackColor = Color.Tomato;
             label15.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label15.ForeColor = Color.MidnightBlue;
-            label15.Location = new Point(394, 126);
+            label15.Location = new Point(384, 126);
             label15.Name = "label15";
             label15.Size = new Size(79, 52);
             label15.TabIndex = 16;
             label15.Text = "Ққ";
+            label15.Click += label15_Click;
             // 
             // label16
             // 
@@ -277,6 +290,7 @@
             label16.Size = new Size(73, 52);
             label16.TabIndex = 17;
             label16.Text = "Лл";
+            label16.Click += label16_Click;
             // 
             // label17
             // 
@@ -289,6 +303,7 @@
             label17.Size = new Size(82, 52);
             label17.TabIndex = 18;
             label17.Text = "Мм";
+            label17.Click += label17_Click;
             // 
             // label18
             // 
@@ -296,11 +311,12 @@
             label18.BackColor = Color.Tomato;
             label18.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label18.ForeColor = Color.MidnightBlue;
-            label18.Location = new Point(630, 126);
+            label18.Location = new Point(645, 126);
             label18.Name = "label18";
             label18.Size = new Size(71, 52);
             label18.TabIndex = 19;
             label18.Text = "Нн";
+            label18.Click += label18_Click;
             // 
             // label19
             // 
@@ -313,6 +329,7 @@
             label19.Size = new Size(82, 52);
             label19.TabIndex = 20;
             label19.Text = "Ңң";
+            label19.Click += label19_Click;
             // 
             // label20
             // 
@@ -325,6 +342,7 @@
             label20.Size = new Size(71, 52);
             label20.TabIndex = 21;
             label20.Text = "Оо";
+            label20.Click += label20_Click;
             // 
             // label21
             // 
@@ -337,6 +355,7 @@
             label21.Size = new Size(82, 52);
             label21.TabIndex = 22;
             label21.Text = "Өө";
+            label21.Click += label21_Click;
             // 
             // label22
             // 
@@ -344,11 +363,12 @@
             label22.BackColor = Color.Tomato;
             label22.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label22.ForeColor = Color.MidnightBlue;
-            label22.Location = new Point(252, 183);
+            label22.Location = new Point(273, 183);
             label22.Name = "label22";
             label22.Size = new Size(80, 52);
             label22.TabIndex = 23;
             label22.Text = "Пп";
+            label22.Click += label22_Click;
             // 
             // label23
             // 
@@ -356,11 +376,12 @@
             label23.BackColor = Color.Tomato;
             label23.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label23.ForeColor = Color.MidnightBlue;
-            label23.Location = new Point(325, 183);
+            label23.Location = new Point(362, 183);
             label23.Name = "label23";
             label23.Size = new Size(62, 52);
             label23.TabIndex = 24;
             label23.Text = "Рр";
+            label23.Click += label23_Click;
             // 
             // label24
             // 
@@ -368,11 +389,12 @@
             label24.BackColor = Color.Tomato;
             label24.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label24.ForeColor = Color.MidnightBlue;
-            label24.Location = new Point(395, 183);
+            label24.Location = new Point(432, 183);
             label24.Name = "label24";
             label24.Size = new Size(64, 52);
             label24.TabIndex = 25;
             label24.Text = "Сс";
+            label24.Click += label24_Click;
             // 
             // label25
             // 
@@ -380,11 +402,12 @@
             label25.BackColor = Color.Tomato;
             label25.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label25.ForeColor = Color.MidnightBlue;
-            label25.Location = new Point(472, 183);
+            label25.Location = new Point(504, 183);
             label25.Name = "label25";
             label25.Size = new Size(77, 52);
             label25.TabIndex = 26;
             label25.Text = "Тт";
+            label25.Click += label25_Click;
             // 
             // label26
             // 
@@ -392,11 +415,12 @@
             label26.BackColor = Color.Gold;
             label26.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label26.ForeColor = Color.Red;
-            label26.Location = new Point(555, 183);
+            label26.Location = new Point(590, 183);
             label26.Name = "label26";
             label26.Size = new Size(66, 52);
             label26.TabIndex = 27;
             label26.Text = "Уу";
+            label26.Click += label26_Click;
             // 
             // label27
             // 
@@ -404,11 +428,12 @@
             label27.BackColor = Color.Gold;
             label27.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label27.ForeColor = Color.Red;
-            label27.Location = new Point(630, 183);
+            label27.Location = new Point(665, 183);
             label27.Name = "label27";
             label27.Size = new Size(75, 52);
             label27.TabIndex = 28;
             label27.Text = "Ұұ";
+            label27.Click += label27_Click;
             // 
             // label28
             // 
@@ -421,6 +446,7 @@
             label28.Size = new Size(75, 52);
             label28.TabIndex = 29;
             label28.Text = "Үү";
+            label28.Click += label28_Click;
             // 
             // label29
             // 
@@ -428,11 +454,12 @@
             label29.BackColor = Color.Tomato;
             label29.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label29.ForeColor = Color.MidnightBlue;
-            label29.Location = new Point(101, 248);
+            label29.Location = new Point(97, 248);
             label29.Name = "label29";
             label29.Size = new Size(75, 52);
             label29.TabIndex = 30;
             label29.Text = "Фф";
+            label29.Click += label29_Click;
             // 
             // label30
             // 
@@ -445,6 +472,7 @@
             label30.Size = new Size(71, 52);
             label30.TabIndex = 31;
             label30.Text = "Хх";
+            label30.Click += label30_Click;
             // 
             // label31
             // 
@@ -452,11 +480,12 @@
             label31.BackColor = Color.Tomato;
             label31.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label31.ForeColor = Color.MidnightBlue;
-            label31.Location = new Point(252, 248);
+            label31.Location = new Point(262, 248);
             label31.Name = "label31";
             label31.Size = new Size(74, 52);
             label31.TabIndex = 32;
             label31.Text = "Цц";
+            label31.Click += label31_Click;
             // 
             // label32
             // 
@@ -464,11 +493,12 @@
             label32.BackColor = Color.Tomato;
             label32.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label32.ForeColor = Color.MidnightBlue;
-            label32.Location = new Point(325, 248);
+            label32.Location = new Point(345, 248);
             label32.Name = "label32";
             label32.Size = new Size(65, 52);
             label32.TabIndex = 33;
             label32.Text = "Чч";
+            label32.Click += label32_Click;
             // 
             // label33
             // 
@@ -476,11 +506,12 @@
             label33.BackColor = Color.Tomato;
             label33.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label33.ForeColor = Color.MidnightBlue;
-            label33.Location = new Point(395, 248);
+            label33.Location = new Point(419, 248);
             label33.Name = "label33";
             label33.Size = new Size(85, 52);
             label33.TabIndex = 34;
             label33.Text = "Шш";
+            label33.Click += label33_Click;
             // 
             // label34
             // 
@@ -488,11 +519,12 @@
             label34.BackColor = Color.Tomato;
             label34.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label34.ForeColor = Color.MidnightBlue;
-            label34.Location = new Point(472, 248);
+            label34.Location = new Point(513, 248);
             label34.Name = "label34";
             label34.Size = new Size(86, 52);
             label34.TabIndex = 35;
             label34.Text = "Щщ";
+            label34.Click += label34_Click;
             // 
             // label35
             // 
@@ -500,11 +532,12 @@
             label35.BackColor = Color.Gold;
             label35.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label35.ForeColor = Color.Red;
-            label35.Location = new Point(554, 248);
+            label35.Location = new Point(608, 248);
             label35.Name = "label35";
             label35.Size = new Size(91, 52);
             label35.TabIndex = 36;
             label35.Text = "Ыы";
+            label35.Click += label35_Click;
             // 
             // label36
             // 
@@ -512,11 +545,12 @@
             label36.BackColor = Color.Gold;
             label36.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label36.ForeColor = Color.Red;
-            label36.Location = new Point(630, 248);
+            label36.Location = new Point(706, 248);
             label36.Name = "label36";
             label36.Size = new Size(42, 52);
             label36.TabIndex = 37;
             label36.Text = "li";
+            label36.Click += label36_Click;
             // 
             // label37
             // 
@@ -524,11 +558,12 @@
             label37.BackColor = Color.Gold;
             label37.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label37.ForeColor = Color.Red;
-            label37.Location = new Point(101, 309);
+            label37.Location = new Point(86, 309);
             label37.Name = "label37";
             label37.Size = new Size(65, 52);
             label37.TabIndex = 38;
             label37.Text = "Ээ";
+            label37.Click += label37_Click;
             // 
             // label38
             // 
@@ -536,11 +571,12 @@
             label38.BackColor = Color.Gold;
             label38.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label38.ForeColor = Color.Red;
-            label38.Location = new Point(182, 309);
+            label38.Location = new Point(162, 309);
             label38.Name = "label38";
             label38.Size = new Size(97, 52);
             label38.TabIndex = 39;
             label38.Text = "Юю";
+            label38.Click += label38_Click;
             // 
             // label39
             // 
@@ -548,11 +584,12 @@
             label39.BackColor = Color.Gold;
             label39.Font = new Font("Comic Sans MS", 27.75F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label39.ForeColor = Color.Red;
-            label39.Location = new Point(285, 309);
+            label39.Location = new Point(269, 309);
             label39.Name = "label39";
             label39.Size = new Size(64, 52);
             label39.TabIndex = 40;
             label39.Text = "Яя";
+            label39.Click += label39_Click;
             // 
             // label40
             // 
@@ -562,16 +599,17 @@
             label40.ForeColor = Color.Red;
             label40.Location = new Point(13, 309);
             label40.Name = "label40";
-            label40.Size = new Size(62, 52);
+            label40.Size = new Size(53, 52);
             label40.TabIndex = 41;
-            label40.Text = "Ьь";
+            label40.Text = "Һ";
+            label40.Click += label40_Click;
             // 
             // Alphabet
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(777, 395);
+            ClientSize = new Size(758, 372);
             Controls.Add(label40);
             Controls.Add(label39);
             Controls.Add(label38);

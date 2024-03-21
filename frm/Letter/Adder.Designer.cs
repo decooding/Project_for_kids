@@ -61,9 +61,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(351, 130);
+            label1.BackColor = SystemColors.ActiveCaption;
+            label1.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label1.Location = new Point(327, 124);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(102, 45);
             label1.TabIndex = 2;
             label1.Text = "label1";
             // 
@@ -74,7 +76,7 @@
             label2.Font = new Font("Comic Sans MS", 48F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label2.ForeColor = Color.Red;
             label2.Location = new Point(137, 186);
-            label2.Margin = new Padding(0, 0, 0, 0);
+            label2.Margin = new Padding(0);
             label2.Name = "label2";
             label2.Size = new Size(85, 90);
             label2.TabIndex = 3;

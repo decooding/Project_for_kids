@@ -29,7 +29,7 @@ namespace WinApp.frm
             new Question { CorrectOptionIndex = 2, ImageName = "6"}
         };
 
-        private string imagesFolderPath = "D:\\WinApp-for-kids-master\\resource\\san\\less\\";
+        private string imagesFolderPath = "G:\\Project_for_kids\\resource\\san\\less\\";
         private int counter = 0;
         private int currentImageIndex = 0; // Add this line to track the current image index
 

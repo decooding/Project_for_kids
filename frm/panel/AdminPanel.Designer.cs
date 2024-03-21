@@ -48,11 +48,11 @@
             label3 = new Label();
             tabPage2 = new TabPage();
             button3 = new Button();
-            textBox8 = new TextBox();
+            LetterTextBox = new TextBox();
             label10 = new Label();
-            textBox7 = new TextBox();
+            MathTextBox = new TextBox();
             label9 = new Label();
-            textBox6 = new TextBox();
+            idUserTextBox = new TextBox();
             label8 = new Label();
             idTextBox = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -230,11 +230,11 @@
             // tabPage2
             // 
             tabPage2.Controls.Add(button3);
-            tabPage2.Controls.Add(textBox8);
+            tabPage2.Controls.Add(LetterTextBox);
             tabPage2.Controls.Add(label10);
-            tabPage2.Controls.Add(textBox7);
+            tabPage2.Controls.Add(MathTextBox);
             tabPage2.Controls.Add(label9);
-            tabPage2.Controls.Add(textBox6);
+            tabPage2.Controls.Add(idUserTextBox);
             tabPage2.Controls.Add(label8);
             tabPage2.Location = new Point(4, 24);
             tabPage2.Name = "tabPage2";
@@ -252,13 +252,14 @@
             button3.TabIndex = 11;
             button3.Text = "Өзгерту";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
-            // textBox8
+            // LetterTextBox
             // 
-            textBox8.Location = new Point(74, 77);
-            textBox8.Name = "textBox8";
-            textBox8.Size = new Size(100, 23);
-            textBox8.TabIndex = 10;
+            LetterTextBox.Location = new Point(74, 77);
+            LetterTextBox.Name = "LetterTextBox";
+            LetterTextBox.Size = new Size(100, 23);
+            LetterTextBox.TabIndex = 10;
             // 
             // label10
             // 
@@ -269,12 +270,12 @@
             label10.TabIndex = 9;
             label10.Text = "Әріп:";
             // 
-            // textBox7
+            // MathTextBox
             // 
-            textBox7.Location = new Point(74, 48);
-            textBox7.Name = "textBox7";
-            textBox7.Size = new Size(100, 23);
-            textBox7.TabIndex = 8;
+            MathTextBox.Location = new Point(74, 48);
+            MathTextBox.Name = "MathTextBox";
+            MathTextBox.Size = new Size(100, 23);
+            MathTextBox.TabIndex = 8;
             // 
             // label9
             // 
@@ -285,12 +286,12 @@
             label9.TabIndex = 7;
             label9.Text = "Логика:";
             // 
-            // textBox6
+            // idUserTextBox
             // 
-            textBox6.Location = new Point(105, 19);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(69, 23);
-            textBox6.TabIndex = 6;
+            idUserTextBox.Location = new Point(105, 19);
+            idUserTextBox.Name = "idUserTextBox";
+            idUserTextBox.Size = new Size(69, 23);
+            idUserTextBox.TabIndex = 6;
             // 
             // label8
             // 
@@ -307,6 +308,7 @@
             idTextBox.Name = "idTextBox";
             idTextBox.Size = new Size(32, 23);
             idTextBox.TabIndex = 7;
+            idTextBox.TextChanged += idTextBox_TextChanged;
             // 
             // AdminPanel
             // 
@@ -355,11 +357,11 @@
         private Label label5;
         private TextBox firstnameTextBox;
         private Label label4;
-        private TextBox textBox8;
+        private TextBox LetterTextBox;
         private Label label10;
-        private TextBox textBox7;
+        private TextBox MathTextBox;
         private Label label9;
-        private TextBox textBox6;
+        private TextBox idUserTextBox;
         private Label label8;
         private Button button3;
         private TextBox idTextBox;

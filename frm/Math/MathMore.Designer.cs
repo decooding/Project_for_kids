@@ -82,7 +82,7 @@ namespace Program_for_kids.frm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ActiveCaption;
+            BackColor = SystemColors.ControlLightLight;
             ClientSize = new Size(751, 330);
             Controls.Add(pictureBox3);
             Controls.Add(label1);

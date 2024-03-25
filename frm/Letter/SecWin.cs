@@ -1,5 +1,6 @@
 ﻿using Project_for_kids;
 using Project_for_kids.frm.Letter;
+using Project_for_kids.frm.Math;
 
 
 namespace WinApp.frm
@@ -34,9 +35,16 @@ namespace WinApp.frm
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Matin matin= new();
+            Matin matin = new();
             this.Hide();
             matin.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            MathNumber number = new();
+            this.Hide();
+            number.Show();
         }
     }
 }

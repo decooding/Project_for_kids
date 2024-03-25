@@ -32,6 +32,7 @@
             button3 = new Button();
             pictureBox1 = new PictureBox();
             button2 = new Button();
+            button4 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -40,9 +41,9 @@
             button1.BackColor = Color.Blue;
             button1.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold);
             button1.ForeColor = Color.White;
-            button1.Location = new Point(64, 100);
+            button1.Location = new Point(81, 151);
             button1.Name = "button1";
-            button1.Size = new Size(248, 55);
+            button1.Size = new Size(195, 55);
             button1.TabIndex = 0;
             button1.Text = "Әліппе";
             button1.UseVisualStyleBackColor = false;
@@ -53,9 +54,9 @@
             button3.BackColor = Color.FromArgb(192, 64, 0);
             button3.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold);
             button3.ForeColor = Color.White;
-            button3.Location = new Point(64, 174);
+            button3.Location = new Point(81, 225);
             button3.Name = "button3";
-            button3.Size = new Size(248, 55);
+            button3.Size = new Size(195, 55);
             button3.TabIndex = 2;
             button3.Text = "Сөз құра";
             button3.UseVisualStyleBackColor = false;
@@ -77,20 +78,34 @@
             button2.BackColor = Color.FromArgb(192, 64, 0);
             button2.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold);
             button2.ForeColor = Color.White;
-            button2.Location = new Point(64, 252);
+            button2.Location = new Point(81, 303);
             button2.Name = "button2";
-            button2.Size = new Size(248, 55);
+            button2.Size = new Size(195, 55);
             button2.TabIndex = 4;
-            button2.Text = "Мәтін";
+            button2.Text = "Хикая құру";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
+            // 
+            // button4
+            // 
+            button4.BackColor = Color.Blue;
+            button4.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold);
+            button4.ForeColor = Color.White;
+            button4.Location = new Point(81, 81);
+            button4.Name = "button4";
+            button4.Size = new Size(195, 55);
+            button4.TabIndex = 5;
+            button4.Text = "Сандар";
+            button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.Tomato;
-            ClientSize = new Size(385, 394);
+            ClientSize = new Size(358, 394);
+            Controls.Add(button4);
             Controls.Add(button2);
             Controls.Add(pictureBox1);
             Controls.Add(button3);
@@ -108,5 +123,6 @@
         private Button button3;
         private PictureBox pictureBox1;
         private Button button2;
+        private Button button4;
     }
 }

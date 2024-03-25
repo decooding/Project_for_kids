@@ -145,35 +145,40 @@ namespace WinApp.frm.panel
                 try
                 {
                     connection.Open();
-                    string query = "SELECT * FROM [User] INNER JOIN [Result] ON [User].[id] = [Result].[id_res] WHERE [User].[id] = ?";
+                    var idbox = idTextBox.Text;
 
-                    using (OleDbCommand command = new OleDbCommand(query, connection))
+                    if (idbox == "")
                     {
-                        command.Parameters.AddWithValue("@p1", idTextBox.Text);
+                        loginTextBox.Text = "";
+                        passwordTextBox.Text = "";
+                        firstnameTextBox.Text = "";
+                        lastnameTextBox.Text = "";
+                        ageTextBox.Text = "";
+                        idUserTextBox.Text = "";
+                        MathTextBox.Text = "";
+                        LetterTextBox.Text = "";
+                    }
+                    else
+                    {
+                        string query = "SELECT * FROM [User] INNER JOIN [Result] ON [User].[id] = [Result].[id_res] WHERE [User].[id] = ?";
 
-                        OleDbDataReader reader = command.ExecuteReader();
-                        if (reader.Read())
+                        using (OleDbCommand command = new OleDbCommand(query, connection))
                         {
-                            loginTextBox.Text = reader["Login"].ToString();
-                            passwordTextBox.Text = reader["Password"].ToString();
-                            firstnameTextBox.Text = reader["Firstname"].ToString();
-                            lastnameTextBox.Text = reader["Lastname"].ToString();
-                            ageTextBox.Text = reader["Age"].ToString();
+                            command.Parameters.AddWithValue("@p1", idTextBox.Text);
 
-                            idUserTextBox.Text = reader["id_res"].ToString();
-                            MathTextBox.Text = reader["Math_res"].ToString();
-                            LetterTextBox.Text = reader["Letter_res"].ToString();
-                        }
-                        else
-                        {
-                            loginTextBox.Text = "";
-                            passwordTextBox.Text = "";
-                            firstnameTextBox.Text = "";
-                            lastnameTextBox.Text = "";
-                            ageTextBox.Text = "";
-                            idUserTextBox.Text ="";
-                            MathTextBox.Text = "";
-                            LetterTextBox.Text = "";
+                            OleDbDataReader reader = command.ExecuteReader();
+                            if (reader.Read())
+                            {
+                                loginTextBox.Text = reader["Login"].ToString();
+                                passwordTextBox.Text = reader["Password"].ToString();
+                                firstnameTextBox.Text = reader["Firstname"].ToString();
+                                lastnameTextBox.Text = reader["Lastname"].ToString();
+                                ageTextBox.Text = reader["Age"].ToString();
+
+                                idUserTextBox.Text = reader["id_res"].ToString();
+                                MathTextBox.Text = reader["Math_res"].ToString();
+                                LetterTextBox.Text = reader["Letter_res"].ToString();
+                            }
                         }
                     }
                 }

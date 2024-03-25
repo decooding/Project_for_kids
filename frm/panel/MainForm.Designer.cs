@@ -30,7 +30,6 @@
         {
             button1 = new Button();
             button2 = new Button();
-            button3 = new Button();
             button4 = new Button();
             button5 = new Button();
             label1 = new Label();
@@ -46,7 +45,7 @@
             button1.Name = "button1";
             button1.Size = new Size(264, 47);
             button1.TabIndex = 0;
-            button1.Text = "Математика";
+            button1.Text = "Логика";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
@@ -55,26 +54,13 @@
             button2.BackColor = Color.DarkOrange;
             button2.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button2.ForeColor = SystemColors.ControlLightLight;
-            button2.Location = new Point(42, 173);
+            button2.Location = new Point(42, 183);
             button2.Name = "button2";
-            button2.Size = new Size(264, 47);
+            button2.Size = new Size(264, 54);
             button2.TabIndex = 1;
-            button2.Text = "Әріп";
+            button2.Text = "Сөйлеуді дамыту";
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
-            // 
-            // button3
-            // 
-            button3.BackColor = Color.MediumBlue;
-            button3.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            button3.ForeColor = SystemColors.ControlLightLight;
-            button3.Location = new Point(42, 291);
-            button3.Name = "button3";
-            button3.Size = new Size(264, 47);
-            button3.TabIndex = 2;
-            button3.Text = "Мини-ойындар";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -93,9 +79,9 @@
             button5.BackColor = Color.Lime;
             button5.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button5.ForeColor = SystemColors.ControlLightLight;
-            button5.Location = new Point(42, 233);
+            button5.Location = new Point(42, 258);
             button5.Name = "button5";
-            button5.Size = new Size(264, 47);
+            button5.Size = new Size(264, 53);
             button5.TabIndex = 4;
             button5.Text = "Бейнелер";
             button5.UseVisualStyleBackColor = false;
@@ -117,11 +103,10 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.Highlight;
-            ClientSize = new Size(350, 400);
+            ClientSize = new Size(350, 342);
             Controls.Add(label1);
             Controls.Add(button5);
             Controls.Add(button4);
-            Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.FixedToolWindow;
@@ -137,7 +122,6 @@
 
         private Button button1;
         private Button button2;
-        private Button button3;
         private Button button4;
         private Button button5;
         private Label label1;

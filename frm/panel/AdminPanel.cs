@@ -1,7 +1,6 @@
 ﻿using Project_for_kids;
 using System.Data;
 using System.Data.OleDb;
-using WinApp.frm.Login;
 
 namespace WinApp.frm.panel
 {
@@ -57,7 +56,7 @@ namespace WinApp.frm.panel
             string firstname = firstnameTextBox.Text;
             string lastname = lastnameTextBox.Text;
             int age = Convert.ToInt32(ageTextBox.Text);
-            
+
 
 
             try

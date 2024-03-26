@@ -119,7 +119,7 @@
             linkLabel4.Size = new Size(28, 15);
             linkLabel4.TabIndex = 2;
             linkLabel4.TabStop = true;
-            linkLabel4.Text = "1:23";
+            linkLabel4.Text = "4:04";
             // 
             // label8
             // 
@@ -127,9 +127,9 @@
             label8.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label8.Location = new Point(176, 22);
             label8.Name = "label8";
-            label8.Size = new Size(78, 20);
+            label8.Size = new Size(90, 20);
             label8.TabIndex = 0;
-            label8.Text = "Қуырмаш";
+            label8.Text = "Жануарлар";
             // 
             // pictureBox4
             // 
@@ -171,7 +171,7 @@
             linkLabel3.Size = new Size(28, 15);
             linkLabel3.TabIndex = 2;
             linkLabel3.TabStop = true;
-            linkLabel3.Text = "1:23";
+            linkLabel3.Text = "1:54";
             // 
             // label6
             // 
@@ -179,9 +179,9 @@
             label6.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label6.Location = new Point(176, 22);
             label6.Name = "label6";
-            label6.Size = new Size(78, 20);
+            label6.Size = new Size(89, 20);
             label6.TabIndex = 0;
-            label6.Text = "Қуырмаш";
+            label6.Text = "Бағдаршам";
             // 
             // pictureBox3
             // 
@@ -223,7 +223,7 @@
             linkLabel2.Size = new Size(28, 15);
             linkLabel2.TabIndex = 2;
             linkLabel2.TabStop = true;
-            linkLabel2.Text = "1:23";
+            linkLabel2.Text = "2:47";
             // 
             // label4
             // 
@@ -283,9 +283,9 @@
             label1.Font = new Font("Segoe UI Semibold", 11.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label1.Location = new Point(176, 22);
             label1.Name = "label1";
-            label1.Size = new Size(78, 20);
+            label1.Size = new Size(98, 20);
             label1.TabIndex = 0;
-            label1.Text = "Қуырмаш";
+            label1.Text = "Джунгли биі";
             // 
             // pictureBox1
             // 

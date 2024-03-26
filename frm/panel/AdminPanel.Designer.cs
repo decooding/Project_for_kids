@@ -55,6 +55,7 @@
             idUserTextBox = new TextBox();
             label8 = new Label();
             idTextBox = new TextBox();
+            label11 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             tabControl1.SuspendLayout();
@@ -304,17 +305,27 @@
             // 
             // idTextBox
             // 
-            idTextBox.Location = new Point(854, 32);
+            idTextBox.Location = new Point(864, 32);
             idTextBox.Name = "idTextBox";
             idTextBox.Size = new Size(32, 23);
             idTextBox.TabIndex = 7;
             idTextBox.TextChanged += idTextBox_TextChanged;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.Location = new Point(839, 37);
+            label11.Name = "label11";
+            label11.Size = new Size(21, 15);
+            label11.TabIndex = 8;
+            label11.Text = "ID:";
             // 
             // AdminPanel
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(908, 267);
+            Controls.Add(label11);
             Controls.Add(idTextBox);
             Controls.Add(tabControl1);
             Controls.Add(button2);
@@ -365,5 +376,6 @@
         private Label label8;
         private Button button3;
         private TextBox idTextBox;
+        private Label label11;
     }
 }

@@ -1,6 +1,4 @@
-﻿using System;
-using System.Data.OleDb;
-using System.Windows.Forms;
+﻿using System.Data.OleDb;
 
 namespace WinApp.frm.Login
 {
@@ -26,7 +24,7 @@ namespace WinApp.frm.Login
 
             if (!int.TryParse(age.Text, out userage))
             {
-                MessageBox.Show("Пожалуйста, введите корректное числовое значение для возраста.");
+                MessageBox.Show("Тіркелуші жасын дұрыс енгізіңіз.");
                 return;
             }
 
@@ -53,7 +51,7 @@ namespace WinApp.frm.Login
 
                         command.ExecuteNonQuery();
 
-                        MessageBox.Show("Запись успешно добавлена в базу данных.");
+                        MessageBox.Show("Қолданушы сәтті тіркелді.");
                     }
                 }
                 catch (Exception ex)

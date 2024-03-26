@@ -12,7 +12,7 @@ namespace WinApp.frm
             InitializeComponent();
         }
 
-        private void FunCallSound(string soundName)
+        void FunCallSound(string soundName)
         {
             string soundFilePath = $@"G:\Project_for_kids\resource\sound\alphabet\{soundName}.wav";
             soundPlayer = new SoundPlayer(soundFilePath);

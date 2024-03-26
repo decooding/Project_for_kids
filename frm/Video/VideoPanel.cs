@@ -15,32 +15,34 @@
             main.Show();
         }
 
-        private void panel2_Click(object sender, EventArgs e)
+        private void soundVideoPanel(string val)
         {
             MediaPlayer1.Ctlcontrols.stop();
-            MediaPlayer1.URL = "G:\\Project_for_kids\\resource\\video\\1.mp4";
+            MediaPlayer1.URL = $@"G:\\Project_for_kids\\resource\\video\\{val}.mp4";
             MediaPlayer1.Ctlcontrols.play();
+        }
+
+        private void panel2_Click(object sender, EventArgs e)
+        {
+            soundVideoPanel("1");
         }
 
         private void panel3_Click(object sender, EventArgs e)
         {
-            MediaPlayer1.Ctlcontrols.stop();
-            MediaPlayer1.URL = "G:\\Project_for_kids\\resource\\video\\2.mp4";
-            MediaPlayer1.Ctlcontrols.play();
+            soundVideoPanel("2");
+
         }
 
         private void panel4_Click(object sender, EventArgs e)
         {
-            MediaPlayer1.Ctlcontrols.stop();
-            MediaPlayer1.URL = "G:\\Project_for_kids\\resource\\video\\3.mp4";
-            MediaPlayer1.Ctlcontrols.play();
+            soundVideoPanel("3");
+
         }
 
         private void panel5_Click(object sender, EventArgs e)
         {
-            MediaPlayer1.Ctlcontrols.stop();
-            MediaPlayer1.URL = "G:\\Project_for_kids\\resource\\video\\4.mp4";
-            MediaPlayer1.Ctlcontrols.play();
+            soundVideoPanel("4");
+
         }
 
     }

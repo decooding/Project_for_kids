@@ -15,34 +15,23 @@ namespace WinApp.frm.Login
 
         private void AuthenticateUser(string username, string password)
         {
-            // Строка подключения к базе данных Access
             string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=base.accdb";
 
-            // Создание объекта подключения
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
                 try
                 {
-                    // Открытие подключения
                     connection.Open();
-
-                    // Создание SQL-запроса для выборки пользователя по логину и паролю
                     string selectQuery = "SELECT * FROM [User] WHERE Login = ? AND Password = ?";
-
-                    // Создание объекта команды для выполнения запроса
                     using (OleDbCommand command = new OleDbCommand(selectQuery, connection))
                     {
-                        // Добавление параметров с соответствующими значениями
                         command.Parameters.AddWithValue("@Login", username);
                         command.Parameters.AddWithValue("@Password", password);
 
-                        // Выполнение запроса
                         OleDbDataReader reader = command.ExecuteReader();
 
-                        // Проверка наличия пользователя с указанным логином и паролем
                         if (reader.Read())
                         {
-                            MessageBox.Show("Авторизация успешна!");
                             Auth.Username = username;
                             Auth.Password = password;
 
@@ -50,7 +39,7 @@ namespace WinApp.frm.Login
                             mainForm.Show();
                             this.Hide();
                         }
-                        else if (username == "admin" && password == "password")
+                        else if (username == "admin" && password == "admin")
                         {
                             AdminPanel panel = new();
                             panel.Show();
@@ -58,13 +47,12 @@ namespace WinApp.frm.Login
                         }
                         else
                         {
-                            MessageBox.Show("Неверный логин или пароль!");
+                            MessageBox.Show("Логин немесе құпиясөз қате!");
                         }
                     }
                 }
                 catch (Exception ex)
                 {
-                    // Вывод сообщения об ошибке
                     MessageBox.Show(ex.Message);
                 }
             }

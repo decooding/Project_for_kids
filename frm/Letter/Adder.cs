@@ -7,21 +7,21 @@ namespace Project_for_kids.frm.Letter
         public class Quiz
         {
             public Dictionary<int, (string imagePaths, string word, List<string> options, string correctAnswer)> DicQuestionValue = new()
-        {
-            { 1, ("bal", "Б..Л", new List<string> {"Б", "А", "С", "Т"}, "А") },
-            { 2, ("balyq", "БАЛ..Қ", new List<string> {"О", "Е", "Ы", "У"}, "Ы") },
-            { 3, ("gul", "..ҮЛ", new List<string> {"С", "Р", "П", "Г"}, "Г") },
-            { 4, ("it", "..Т", new List<string> {"О", "C", "И", "Й"}, "И") },
-            { 5, ("keme", "К..М..", new List<string> {"З", "А", "Ж", "Е"}, "Е") },
-            { 6, ("kitap", "К..ТАП", new List<string> {"І", "А", "Қ", "E"}, "І") },
-            { 7, ("kolik", "КӨ..ІК", new List<string> {"И", "У", "Л", "Ә"}, "Л") },
-            { 8, ("kun", "К..Н", new List<string> {"Д", "Ң", "Ұ", "Ү"}, "Ү") },
-            { 9, ("mysyq", "М..С..Қ", new List<string> {"Т", "Ы", "І", "Ж"}, "Ы") },
-            { 10, ("qaishy", "ҚАЙ..Ы", new List<string> {"Ш", "Х", "У", "Б"}, "Ш") },
-            { 11, ("siyr", "..ИЫР", new List<string> {"Т", "С", "В", "М"}, "С") },
-            { 12, ("ushaq", "ҰШ..Қ", new List<string> {"Г", "Б", "А", "Ү"}, "А") },
-            { 13, ("baqa", "Б..Қ..", new List<string> {"Ы", "Ә", "Д", "А"}, "А") }
-        };
+            {
+                { 1, ("bal", "Б..Л", new List<string> {"Б", "А", "С", "Т"}, "А") },
+                { 2, ("balyq", "БАЛ..Қ", new List<string> {"О", "Е", "Ы", "У"}, "Ы") },
+                { 3, ("gul", "..ҮЛ", new List<string> {"С", "Р", "П", "Г"}, "Г") },
+                { 4, ("it", "..Т", new List<string> {"О", "C", "И", "Й"}, "И") },
+                { 5, ("keme", "К..М..", new List<string> {"З", "А", "Ж", "Е"}, "Е") },
+                { 6, ("kitap", "К..ТАП", new List<string> {"І", "А", "Қ", "E"}, "І") },
+                { 7, ("kolik", "КӨ..ІК", new List<string> {"И", "У", "Л", "Ә"}, "Л") },
+                { 8, ("kun", "К..Н", new List<string> {"Д", "Ң", "Ұ", "Ү"}, "Ү") },
+                { 9, ("mysyq", "М..С..Қ", new List<string> {"Т", "Ы", "І", "Ж"}, "Ы") },
+                { 10, ("qaishy", "ҚАЙ..Ы", new List<string> {"Ш", "Х", "У", "Б"}, "Ш") },
+                { 11, ("siyr", "..ИЫР", new List<string> {"Т", "С", "В", "М"}, "С") },
+                { 12, ("ushaq", "ҰШ..Қ", new List<string> {"Г", "Б", "А", "Ү"}, "А") },
+                { 13, ("baqa", "Б..Қ..", new List<string> {"Ы", "Ә", "Д", "А"}, "А") }
+            };
         }
 
         private string imagesFolderPath = "G:\\Project_for_kids\\resource\\arip\\img\\";

@@ -12,14 +12,10 @@ namespace WinApp.frm.panel
         private DataSet userDataSet;
         private DataSet resultDataSet;
 
-        public AdminPanel()
-        {
-            InitializeComponent();
-        }
+        public AdminPanel() => InitializeComponent();
 
-        private void AdminPanel_Load(object sender, EventArgs e)
+        public void LoadDataTable()
         {
-
             using (OleDbConnection connection = new OleDbConnection(connectionString))
             {
                 try
@@ -46,6 +42,10 @@ namespace WinApp.frm.panel
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+        private void AdminPanel_Load(object sender, EventArgs e)
+        {
+            LoadDataTable();
         }
 
         public void button1_Click(object sender, EventArgs e)
@@ -78,6 +78,7 @@ namespace WinApp.frm.panel
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Данные успешно обновлены");
+                            LoadDataTable();
                         }
                         else
                         {
@@ -102,7 +103,6 @@ namespace WinApp.frm.panel
         private void button3_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(idTextBox.Text);
-            int userid = Convert.ToInt32(idUserTextBox.Text);
             int math_res = Convert.ToInt32(MathTextBox.Text);
             int letter_res = Convert.ToInt32(LetterTextBox.Text);
 
@@ -111,18 +111,18 @@ namespace WinApp.frm.panel
                 using (OleDbConnection connection = new OleDbConnection(connectionString))
                 {
                     connection.Open();
-                    string query = "UPDATE [Result] SET [id] = ?, [Math_res] = ?, [Letter_res] = ? WHERE [id] = ?";
+                    string query = "UPDATE [Result] SET [Math_res] = ?, [Letter_res] = ? WHERE [id_res] = ?";
                     using (OleDbCommand command = new OleDbCommand(query, connection))
                     {
-                        command.Parameters.AddWithValue("@p1", userid);
-                        command.Parameters.AddWithValue("@p2", math_res);
-                        command.Parameters.AddWithValue("@p3", letter_res);
-                        command.Parameters.AddWithValue("@p4", id);
+                        command.Parameters.AddWithValue("@p1", math_res);
+                        command.Parameters.AddWithValue("@p2", letter_res);
+                        command.Parameters.AddWithValue("@p3", id);
 
                         int rowsAffected = command.ExecuteNonQuery();
                         if (rowsAffected > 0)
                         {
                             MessageBox.Show("Данные успешно обновлены");
+                            LoadDataTable();
                         }
                         else
                         {
@@ -144,9 +144,7 @@ namespace WinApp.frm.panel
                 try
                 {
                     connection.Open();
-                    var idbox = idTextBox.Text;
-
-                    if (idbox == "")
+                    if (idTextBox.Text == "")
                     {
                         loginTextBox.Text = "";
                         passwordTextBox.Text = "";

@@ -1,5 +1,5 @@
-﻿using WinFormsApp1;
-
+﻿using Project_for_kids.data;
+using WinFormsApp1;
 namespace Uniclo.frm
 {
     public partial class MathCount : Form
@@ -9,6 +9,7 @@ namespace Uniclo.frm
             public int CorrectOptionIndex { get; set; }
             public string? ImageName { get; set; }
         }
+        Auth auth = new Auth();
 
         List<Question> questions = new List<Question>
         {
@@ -34,7 +35,7 @@ namespace Uniclo.frm
 
         private string imagesFolderPath = "G:\\Project_for_kids\\resource\\san\\counter\\";
         private int counter = 0;
-        private int currentImageIndex = 0; // Add this line to track the current image index
+        private int currentImageIndex = 0;
 
         public MathCount()
         {
@@ -50,9 +51,10 @@ namespace Uniclo.frm
                 counter++;
                 currentImageIndex = (currentImageIndex + 1) % questions.Count;
 
-                if (currentImageIndex == 17)
+                if (currentImageIndex == 18)
                 {
                     MessageBox.Show($"Тест завершен. Правильных ответов: {counter}");
+                    auth.SaveTestResults(counter,"Math_res");
                 }
                 else
                 {

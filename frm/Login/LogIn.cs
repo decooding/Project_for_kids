@@ -22,7 +22,7 @@ namespace WinApp.frm.Login
                 try
                 {
                     connection.Open();
-                    string selectQuery = "SELECT * FROM [User] WHERE Login = ? AND Password = ?";
+                    string selectQuery = "SELECT [id] FROM [User] WHERE Login = ? AND Password = ?";
                     using (OleDbCommand command = new OleDbCommand(selectQuery, connection))
                     {
                         command.Parameters.AddWithValue("@Login", username);
@@ -32,6 +32,8 @@ namespace WinApp.frm.Login
 
                         if (reader.Read())
                         {
+                            int userId = Convert.ToInt32(reader["id"]);
+                            Auth.Id = userId;
                             Auth.Username = username;
                             Auth.Password = password;
 
@@ -41,7 +43,7 @@ namespace WinApp.frm.Login
                         }
                         else if (username == "admin" && password == "admin")
                         {
-                            AdminPanel panel = new();
+                            AdminPanel panel = new AdminPanel();
                             panel.Show();
                             this.Hide();
                         }
@@ -58,19 +60,18 @@ namespace WinApp.frm.Login
             }
         }
 
-        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
-        {
-            SigIn sigin = new();
-            this.Hide();
-            sigin.Show();
-        }
 
         private void button1_Click(object sender, EventArgs e)
         {
             string username = textBox_Username.Text;
             string password = textBox_Password.Text;
-
             AuthenticateUser(username, password);
+        }
+                private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            SigIn sigin = new();
+            this.Hide();
+            sigin.Show();
         }
     }
 }

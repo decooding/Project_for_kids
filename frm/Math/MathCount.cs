@@ -51,7 +51,7 @@ namespace Uniclo.frm
                 counter++;
                 currentImageIndex = (currentImageIndex + 1) % questions.Count;
 
-                if (currentImageIndex == 18)
+                if (currentImageIndex == 17)
                 {
                     MessageBox.Show($"Тест завершен. Правильных ответов: {counter}");
                     auth.SaveTestResults(counter,"Math_res");

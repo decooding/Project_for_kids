@@ -1,4 +1,5 @@
-﻿using WinFormsApp1;
+﻿using Project_for_kids.data;
+using WinFormsApp1;
 
 namespace Program_for_kids.frm
 {
@@ -26,6 +27,7 @@ namespace Program_for_kids.frm
         private string imagesFolderPath = "G:\\Project_for_kids\\resource\\san\\row\\";
         private int counter = 0;
         private int currentImageIndex = 0;
+        Auth auth = new();
 
         private void CheckAnswer(int selectedOption)
         {
@@ -39,6 +41,8 @@ namespace Program_for_kids.frm
                 if (counter == 8)
                 {
                     MessageBox.Show($"Тест завершен. Правильных ответов: {counter}");
+                    auth.SaveTestResults(counter, "Math_res");
+
                 }
                 else
                 {

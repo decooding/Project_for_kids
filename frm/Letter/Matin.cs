@@ -1,4 +1,5 @@
 ﻿
+using Project_for_kids.data;
 using System.Media;
 using System.Windows.Forms;
 using WinApp.frm;
@@ -31,6 +32,7 @@ namespace Project_for_kids.frm.Letter
         private int currentQuestIndex = 0;
         private Story store = new Story();
         private SoundPlayer soundPlayer;
+        Auth auth = new();
 
         public Matin()
         {
@@ -103,6 +105,7 @@ namespace Project_for_kids.frm.Letter
                 else
                 {
                     MessageBox.Show($"Тест завершен. Правильных ответов: {counter} из {store.StorageValue.Count}");
+                    auth.SaveTestResults(counter, "Letter_res");
                     counter = 0;
                     currentQuestIndex = 0;
                     DisplayQuestion(currentQuestIndex);

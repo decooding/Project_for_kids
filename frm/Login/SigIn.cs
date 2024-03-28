@@ -39,19 +39,40 @@ namespace WinApp.frm.Login
                 {
                     connection.Open();
 
-                    string insertQuery = "INSERT INTO [User] ([Login], [FirstName], [LastName], [Age], [Password]) VALUES (?, ?, ?, ?, ?)";
+                    string insertQuery = @"INSERT INTO [User] ([Login], [FirstName], [LastName], [Age], [Password]) 
+                       VALUES (?, ?, ?, ?, ?)";
+                    string insertResult = @"INSERT INTO [Result] ([id_res], [Math_res], [Letter_res]) 
+                        VALUES ((SELECT TOP 1 [id] FROM [User] WHERE [Login] = ?), 0, 0)";
 
-                    using (OleDbCommand command = new OleDbCommand(insertQuery, connection))
+                    using (OleDbConnection dbConnection = new OleDbConnection(connectionString))
                     {
-                        command.Parameters.AddWithValue("@p1", userlogin);
-                        command.Parameters.AddWithValue("@p2", firstname);
-                        command.Parameters.AddWithValue("@p3", lastname);
-                        command.Parameters.AddWithValue("@p4", userage);
-                        command.Parameters.AddWithValue("@p5", userpassword);
+                        try
+                        {
+                            connection.Open();
 
-                        command.ExecuteNonQuery();
+                            using (OleDbCommand command = new OleDbCommand(insertQuery, dbConnection))
+                            {
+                                command.Parameters.AddWithValue("@p1", userlogin);
+                                command.Parameters.AddWithValue("@p2", firstname);
+                                command.Parameters.AddWithValue("@p3", lastname);
+                                command.Parameters.AddWithValue("@p4", userage);
+                                command.Parameters.AddWithValue("@p5", userpassword);
 
-                        MessageBox.Show("Қолданушы сәтті тіркелді.");
+                                command.ExecuteNonQuery();
+
+                                MessageBox.Show("Қолданушы сәтті тіркелді.");
+                            }
+
+                            using (OleDbCommand command = new OleDbCommand(insertResult, dbConnection))
+                            {
+                                command.Parameters.AddWithValue("@p1", userlogin);
+                                command.ExecuteNonQuery();
+                            }
+                        }
+                        catch (Exception ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
                     }
                 }
                 catch (Exception ex)

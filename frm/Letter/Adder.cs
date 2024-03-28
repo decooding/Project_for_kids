@@ -1,4 +1,5 @@
-﻿using WinApp.frm;
+﻿using Project_for_kids.data;
+using WinApp.frm;
 
 namespace Project_for_kids.frm.Letter
 {
@@ -28,6 +29,7 @@ namespace Project_for_kids.frm.Letter
         private int counter = 0;
         private int currentQuestIndex = 0;
         private Quiz quiz = new Quiz();
+        Auth auth = new Auth();
 
         public Adder()
         {
@@ -62,10 +64,11 @@ namespace Project_for_kids.frm.Letter
                 else
                 {
                     MessageBox.Show($"Тест завершен. Правильных ответов: {counter} из {quiz.DicQuestionValue.Count}");
-                    // Reset the quiz if needed
-                    // counter = 0;
-                    // currentQuestIndex = 0;
-                    // DisplayQuestion(currentQuestIndex);
+                    auth.SaveTestResults(counter, "Letter_res");
+
+                    counter = 0;
+                    currentQuestIndex = 0;
+                    DisplayQuestion(currentQuestIndex);
                 }
             }
             else

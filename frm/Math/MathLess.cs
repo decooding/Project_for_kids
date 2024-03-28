@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using Project_for_kids.data;
 using WinFormsApp1;
+
 
 namespace WinApp.frm
 {
@@ -32,6 +25,7 @@ namespace WinApp.frm
         private string imagesFolderPath = "G:\\Project_for_kids\\resource\\san\\less\\";
         private int counter = 0;
         private int currentImageIndex = 0; // Add this line to track the current image index
+        Auth auth = new Auth();
 
         public MathLess()
         {
@@ -50,6 +44,8 @@ namespace WinApp.frm
                 if (counter == 6)
                 {
                     MessageBox.Show($"Тест завершен. Правильных ответов: {counter}");
+                    auth.SaveTestResults(counter, "Math_res");
+
                 }
                 else
                 {

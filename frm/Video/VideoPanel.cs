@@ -1,4 +1,6 @@
-﻿namespace Project_for_kids.frm.Video
+﻿using static Project_for_kids.data.Auth;
+
+namespace Project_for_kids.frm.Video
 {
     public partial class VideoPanel : Form
     {
@@ -18,7 +20,7 @@
         private void soundVideoPanel(string val)
         {
             MediaPlayer1.Ctlcontrols.stop();
-            MediaPlayer1.URL = $@"G:\\Project_for_kids\\resource\\video\\{val}.mp4";
+            MediaPlayer1.URL = @$"{GFold.GPath}resource\\video\\{val}.mp4";
             MediaPlayer1.Ctlcontrols.play();
         }
 

@@ -33,7 +33,6 @@
             dataGridView1 = new DataGridView();
             dataGridView2 = new DataGridView();
             label2 = new Label();
-            button2 = new Button();
             tabControl1 = new TabControl();
             tabPage1 = new TabPage();
             passwordTextBox = new TextBox();
@@ -56,6 +55,8 @@
             label8 = new Label();
             idTextBox = new TextBox();
             label11 = new Label();
+            label12 = new Label();
+            textBox1 = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             tabControl1.SuspendLayout();
@@ -106,16 +107,6 @@
             label2.Size = new Size(134, 15);
             label2.TabIndex = 4;
             label2.Text = "Қолданушы ұпайлары:";
-            // 
-            // button2
-            // 
-            button2.Location = new Point(702, 27);
-            button2.Name = "button2";
-            button2.Size = new Size(76, 31);
-            button2.TabIndex = 5;
-            button2.Text = "Артқа";
-            button2.UseVisualStyleBackColor = true;
-            button2.Click += button2_Click;
             // 
             // tabControl1
             // 
@@ -305,7 +296,7 @@
             // 
             // idTextBox
             // 
-            idTextBox.Location = new Point(864, 32);
+            idTextBox.Location = new Point(702, 32);
             idTextBox.Name = "idTextBox";
             idTextBox.Size = new Size(32, 23);
             idTextBox.TabIndex = 7;
@@ -314,21 +305,39 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(839, 37);
+            label11.Location = new Point(702, 14);
             label11.Name = "label11";
             label11.Size = new Size(21, 15);
             label11.TabIndex = 8;
             label11.Text = "ID:";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.Location = new Point(858, 14);
+            label12.Name = "label12";
+            label12.Size = new Size(38, 15);
+            label12.TabIndex = 10;
+            label12.Text = "PATH:";
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(783, 32);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(113, 23);
+            textBox1.TabIndex = 9;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // AdminPanel
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(908, 267);
+            Controls.Add(label12);
+            Controls.Add(textBox1);
             Controls.Add(label11);
             Controls.Add(idTextBox);
             Controls.Add(tabControl1);
-            Controls.Add(button2);
             Controls.Add(label2);
             Controls.Add(dataGridView2);
             Controls.Add(dataGridView1);
@@ -354,7 +363,6 @@
         private DataGridView dataGridView1;
         private DataGridView dataGridView2;
         private Label label2;
-        private Button button2;
         private TabControl tabControl1;
         private TabPage tabPage1;
         private TabPage tabPage2;
@@ -377,5 +385,7 @@
         private Button button3;
         private TextBox idTextBox;
         private Label label11;
+        private Label label12;
+        private TextBox textBox1;
     }
 }

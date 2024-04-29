@@ -1,6 +1,7 @@
 ﻿using Project_for_kids;
 using System.Data;
 using System.Data.OleDb;
+using static Project_for_kids.data.Auth;
 
 namespace WinApp.frm.panel
 {
@@ -46,6 +47,8 @@ namespace WinApp.frm.panel
         private void AdminPanel_Load(object sender, EventArgs e)
         {
             LoadDataTable();
+            textBox1.Text = GFold.GPath;
+
         }
 
         public void button1_Click(object sender, EventArgs e)
@@ -92,14 +95,6 @@ namespace WinApp.frm.panel
                 MessageBox.Show("Ошибка: " + ex.Message);
             }
         }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            MainForm mainform = new MainForm();
-            this.Hide();
-            mainform.Show();
-        }
-
         private void button3_Click(object sender, EventArgs e)
         {
             int id = Convert.ToInt32(idTextBox.Text);
@@ -186,5 +181,11 @@ namespace WinApp.frm.panel
             }
         }
 
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            textBox1.TextChanged -= textBox1_TextChanged;
+            GFold.GPath = textBox1.Text;
+            textBox1.TextChanged += textBox1_TextChanged;
+        }
     }
 }

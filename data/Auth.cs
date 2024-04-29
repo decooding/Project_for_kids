@@ -3,6 +3,12 @@ namespace Project_for_kids.data
 {
     public class Auth
     {
+        public static class GFold
+        {
+            public static string GPath = @"G:\Project_for_kids\";
+        }
+
+
         public static int Id { get; set; }
         public static string ?Username { get; set; }
         public static string ?Password { get; set; }
@@ -10,6 +16,33 @@ namespace Project_for_kids.data
         public static int LetterBall { get; set; }
 
         public string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=base.accdb";
+
+        public int SeeTestBall()
+        {
+            int currentValue = 0;
+            try
+            {
+                using (OleDbConnection connection = new OleDbConnection(connectionString))
+                {
+                    connection.Open();
+
+                    string selectQuery = "SELECT [All_res] FROM [Result] WHERE [id_res] = ?";
+                    using (OleDbCommand selectCommand = new OleDbCommand(selectQuery, connection))
+                    {
+                        selectCommand.Parameters.AddWithValue("@Id", Id);
+
+                        object currentScore = selectCommand.ExecuteScalar();
+
+                        currentValue = (currentScore != DBNull.Value) ? Convert.ToInt32(currentScore) : 0;
+                    }
+                }
+            }
+            catch (OleDbException ex)
+            {
+                MessageBox.Show("Ошибка базы данных: " + ex.Message);
+            }
+            return currentValue;
+        }
 
         public void SaveTestResults(int score, string table)
         {
@@ -42,7 +75,7 @@ namespace Project_for_kids.data
                             int rowsAffected = updateCommand.ExecuteNonQuery();
                             if (rowsAffected > 0)
                             {
-                                MessageBox.Show("Результаты теста успешно сохранены");
+                                MessageBox.Show("Құттықтаймын сіз барлығын сәтті өттіңіз!");
                             }
                             else
                             {

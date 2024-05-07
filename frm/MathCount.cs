@@ -11,29 +11,30 @@ namespace Uniclo.frm
             public int CorrectOptionIndex { get; set; }
             public string? ImageName { get; set; }
             public string? SoundPath { get; set; }
+            public string? QuestLabel { get; set; }
         }
-        Auth auth = new Auth();
+        Auth auth = new Auth(); 
 
         List<Question> questions = new List<Question>
         {
-            new Question { CorrectOptionIndex = 4, ImageName = "balyq4", SoundPath= "balyq"},
-            new Question { CorrectOptionIndex = 3, ImageName = "alma3", SoundPath= "fruit" },
-            new Question { CorrectOptionIndex = 3, ImageName = "rakushka3", SoundPath= "ai"},
-            new Question { CorrectOptionIndex = 5, ImageName = "apelsin5", SoundPath= "fruit"},
-            new Question { CorrectOptionIndex = 1, ImageName = "balyq1", SoundPath= "balyq"},
-            new Question { CorrectOptionIndex = 2, ImageName = "cocos2", SoundPath= "fruit"},
-            new Question { CorrectOptionIndex = 5, ImageName = "japyraq5", SoundPath= "list"},
-            new Question { CorrectOptionIndex = 5, ImageName = "jidek5", SoundPath= "fruit"},
-            new Question { CorrectOptionIndex = 2, ImageName = "japyraq2", SoundPath= "list"},
-            new Question { CorrectOptionIndex = 2, ImageName = "avacado2", SoundPath= "fruit"},
-            new Question { CorrectOptionIndex = 1, ImageName = "rakushka1", SoundPath= "ai"},
-            new Question { CorrectOptionIndex = 5, ImageName = "sliva5", SoundPath= "fruit"},
-            new Question { CorrectOptionIndex = 3, ImageName = "balyq3", SoundPath= "balyq"},
-            new Question { CorrectOptionIndex = 1, ImageName = "arbuz1", SoundPath= "fruit"},
-            new Question { CorrectOptionIndex = 2, ImageName = "rakushka2", SoundPath= "ai"},
-            new Question { CorrectOptionIndex = 5, ImageName = "kivi5", SoundPath= "fruit"},
-            new Question { CorrectOptionIndex = 2, ImageName = "balyq2", SoundPath= "balyq"},
-            new Question { CorrectOptionIndex = 1, ImageName = "ananas1", SoundPath= "fruit"}
+            new Question { CorrectOptionIndex = 4, ImageName = "balyq4", SoundPath= "balyq", QuestLabel="Суретте неше балық көрсетілген?"},
+            new Question { CorrectOptionIndex = 3, ImageName = "alma3", SoundPath= "fruit",  QuestLabel="Суретте неше жеміс көрсетілген?"},
+            new Question { CorrectOptionIndex = 3, ImageName = "rakushka3", SoundPath= "ai", QuestLabel="Суретте неше айқұлақ көрсетілген?"},
+            new Question { CorrectOptionIndex = 5, ImageName = "apelsin5", SoundPath= "fruit", QuestLabel="Суретте неше жеміс көрсетілген?"},
+            new Question { CorrectOptionIndex = 1, ImageName = "balyq1", SoundPath= "balyq", QuestLabel="Суретте неше балық көрсетілген?"},
+            new Question { CorrectOptionIndex = 2, ImageName = "cocos2", SoundPath= "fruit", QuestLabel="Суретте неше жеміс көрсетілген?"},
+            new Question { CorrectOptionIndex = 5, ImageName = "japyraq5", SoundPath= "list", QuestLabel="Суретте неше жапырақ көрсетілген?"},
+            new Question { CorrectOptionIndex = 5, ImageName = "jidek5", SoundPath= "fruit", QuestLabel="Суретте неше жеміс көрсетілген?"},
+            new Question { CorrectOptionIndex = 2, ImageName = "japyraq2", SoundPath= "list", QuestLabel="Суретте неше жапырақ көрсетілген?"},
+            new Question { CorrectOptionIndex = 2, ImageName = "avacado2", SoundPath= "fruit", QuestLabel="Суретте неше жеміс көрсетілген?"},
+            new Question { CorrectOptionIndex = 1, ImageName = "rakushka1", SoundPath= "ai", QuestLabel="Суретте неше айқұлақ көрсетілген?"},
+            new Question { CorrectOptionIndex = 5, ImageName = "sliva5", SoundPath= "fruit", QuestLabel="Суретте неше жеміс көрсетілген?"},
+            new Question { CorrectOptionIndex = 3, ImageName = "balyq3", SoundPath= "balyq", QuestLabel="Суретте неше балық көрсетілген?"},
+            new Question { CorrectOptionIndex = 1, ImageName = "arbuz1", SoundPath= "fruit", QuestLabel="Суретте неше жеміс көрсетілген?"},
+            new Question { CorrectOptionIndex = 2, ImageName = "rakushka2", SoundPath= "ai", QuestLabel="Суретте неше айқұлақ көрсетілген?"},
+            new Question { CorrectOptionIndex = 5, ImageName = "kivi5", SoundPath= "fruit",  QuestLabel="Суретте неше жеміс көрсетілген?"},
+            new Question { CorrectOptionIndex = 2, ImageName = "balyq2", SoundPath= "balyq", QuestLabel="Суретте неше балық көрсетілген?"},
+            new Question { CorrectOptionIndex = 1, ImageName = "ananas1", SoundPath= "fruit", QuestLabel="Суретте неше жеміс көрсетілген?"}
         };
 
         
@@ -50,6 +51,8 @@ namespace Uniclo.frm
         {
             InitializeComponent();
             PlaySound($"{questions[currentImageIndex].SoundPath}.wav");
+            label1.Text = questions[currentImageIndex].QuestLabel;
+
         }
 
         private void CheckAnswer(int selectedOption)
@@ -70,6 +73,7 @@ namespace Uniclo.frm
                 {
                     pictureBox1.ImageLocation = Path.Combine(imagesFolderPath, $"{questions[currentImageIndex].ImageName}.png");
                     PlaySound($"{questions[currentImageIndex].SoundPath}.wav");
+                    label1.Text = questions[currentImageIndex].QuestLabel;
                 }
             }
             else

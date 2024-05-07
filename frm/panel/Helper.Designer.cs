@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Helper));
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
@@ -42,7 +41,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Image = Properties.Resources.Рисунок2;
             pictureBox1.Location = new Point(11, 109);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(427, 326);
@@ -52,7 +51,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Image = Properties.Resources.Рисунок1;
             pictureBox2.Location = new Point(12, 441);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(427, 380);
@@ -62,7 +61,7 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Image = Properties.Resources.Рисунок3;
             pictureBox3.Location = new Point(12, 827);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(427, 443);

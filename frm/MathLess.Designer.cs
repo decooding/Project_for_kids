@@ -33,6 +33,7 @@
             pictureBox3 = new PictureBox();
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
@@ -42,7 +43,7 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(246, 48);
+            pictureBox1.Location = new Point(225, 64);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(384, 237);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -51,7 +52,7 @@
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(130, 323);
+            pictureBox2.Location = new Point(126, 319);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(170, 100);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -61,7 +62,7 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Location = new Point(348, 323);
+            pictureBox3.Location = new Point(334, 319);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(170, 100);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -71,7 +72,7 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.Location = new Point(566, 323);
+            pictureBox4.Location = new Point(523, 319);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(170, 100);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -90,12 +91,26 @@
             pictureBox5.TabStop = false;
             pictureBox5.Click += pictureBox5_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label1.Location = new Point(152, 31);
+            label1.Name = "label1";
+            label1.Size = new Size(527, 30);
+            label1.TabIndex = 6;
+            label1.Text = "Әр тәрелкеге алмадан қою үшін, неше алма қажет?";
+            // 
             // MathLess
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = SystemColors.ControlLightLight;
-            ClientSize = new Size(855, 464);
+            BackColor = SystemColors.InactiveBorder;
+            BackgroundImage = Project_for_kids.Properties.Resources._69b90ed4e4087e02faaaccf33a843dfb;
+            BackgroundImageLayout = ImageLayout.Zoom;
+            ClientSize = new Size(845, 479);
+            Controls.Add(label1);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
@@ -112,6 +127,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -121,5 +137,6 @@
         private PictureBox pictureBox3;
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
+        private Label label1;
     }
 }

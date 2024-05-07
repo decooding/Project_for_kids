@@ -72,6 +72,8 @@ namespace Program_for_kids.frm
         public MathRow()
         {
             InitializeComponent();
+            soundPlayer = new SoundPlayer(Path.Combine(soundFilePath, $"qatar.wav"));
+            soundPlayer.Play();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)

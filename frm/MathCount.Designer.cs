@@ -37,16 +37,17 @@
             pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
-            pictureBox7 = new PictureBox();
             pictureBox8 = new PictureBox();
+            pictureBox7 = new PictureBox();
+            label1 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             SuspendLayout();
             // 
             // imageList1
@@ -64,7 +65,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = Project_for_kids.Properties.Resources.zero;
-            pictureBox1.Location = new Point(238, 29);
+            pictureBox1.Location = new Point(275, 66);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(126, 126);
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -74,7 +75,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Project_for_kids.Properties.Resources.four;
-            pictureBox2.Location = new Point(401, 196);
+            pictureBox2.Location = new Point(299, 295);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(69, 64);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -85,7 +86,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = Project_for_kids.Properties.Resources.one;
-            pictureBox3.Location = new Point(123, 196);
+            pictureBox3.Location = new Point(299, 213);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(69, 64);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -96,7 +97,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = Project_for_kids.Properties.Resources.three;
-            pictureBox4.Location = new Point(308, 196);
+            pictureBox4.Location = new Point(206, 295);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(69, 64);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -107,7 +108,7 @@
             // pictureBox5
             // 
             pictureBox5.Image = Project_for_kids.Properties.Resources.two;
-            pictureBox5.Location = new Point(217, 196);
+            pictureBox5.Location = new Point(400, 213);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(69, 64);
             pictureBox5.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -118,24 +119,13 @@
             // pictureBox6
             // 
             pictureBox6.Image = Project_for_kids.Properties.Resources.five;
-            pictureBox6.Location = new Point(494, 196);
+            pictureBox6.Location = new Point(400, 295);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(69, 64);
             pictureBox6.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox6.TabIndex = 6;
             pictureBox6.TabStop = false;
             pictureBox6.Click += pictureBox6_Click;
-            // 
-            // pictureBox7
-            // 
-            pictureBox7.Image = Project_for_kids.Properties.Resources.zero;
-            pictureBox7.Location = new Point(34, 196);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(69, 64);
-            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox7.TabIndex = 7;
-            pictureBox7.TabStop = false;
-            pictureBox7.Click += pictureBox7_Click;
             // 
             // pictureBox8
             // 
@@ -148,12 +138,37 @@
             pictureBox8.TabStop = false;
             pictureBox8.Click += pictureBox8_Click;
             // 
+            // pictureBox7
+            // 
+            pictureBox7.Image = Project_for_kids.Properties.Resources.zero;
+            pictureBox7.Location = new Point(206, 213);
+            pictureBox7.Name = "pictureBox7";
+            pictureBox7.Size = new Size(69, 64);
+            pictureBox7.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox7.TabIndex = 7;
+            pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label1.Location = new Point(168, 23);
+            label1.Name = "label1";
+            label1.Size = new Size(346, 30);
+            label1.TabIndex = 9;
+            label1.Text = "Суретте неше балық көрсетілген?";
+            label1.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // MathCount
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ActiveCaption;
-            ClientSize = new Size(599, 288);
+            BackgroundImage = Project_for_kids.Properties.Resources.aa8cbe67fed87ece4f1b633584279586;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(681, 387);
+            Controls.Add(label1);
             Controls.Add(pictureBox8);
             Controls.Add(pictureBox7);
             Controls.Add(pictureBox6);
@@ -162,6 +177,7 @@
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
+            DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "MathCount";
             StartPosition = FormStartPosition.CenterScreen;
@@ -173,8 +189,8 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -188,7 +204,8 @@
         private PictureBox pictureBox4;
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
-        private PictureBox pictureBox7;
         private PictureBox pictureBox8;
+        private PictureBox pictureBox7;
+        private Label label1;
     }
 }

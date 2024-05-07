@@ -27,241 +27,203 @@ namespace WinApp.frm
             form3.Show();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+        private void pictureBox36_Click(object sender, EventArgs e)
         {
             FunCallSound("А");
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void pictureBox37_Click(object sender, EventArgs e)
         {
             FunCallSound("Ә");
+
         }
 
-        private void label3_Click(object sender, EventArgs e)
+        private void pictureBox38_Click(object sender, EventArgs e)
         {
             FunCallSound("Б");
+
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void pictureBox39_Click(object sender, EventArgs e)
         {
             FunCallSound("В");
 
         }
 
-        private void label5_Click(object sender, EventArgs e)
+        private void pictureBox40_Click(object sender, EventArgs e)
         {
             FunCallSound("Г");
 
         }
 
-        private void label6_Click(object sender, EventArgs e)
+        private void pictureBox41_Click(object sender, EventArgs e)
         {
             FunCallSound("Ғ");
-
         }
 
-        private void label7_Click(object sender, EventArgs e)
+        private void pictureBox42_Click(object sender, EventArgs e)
         {
             FunCallSound("Д");
-
         }
 
-        private void label8_Click(object sender, EventArgs e)
+        private void pictureBox43_Click(object sender, EventArgs e)
         {
             FunCallSound("Е");
-
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void pictureBox20_Click(object sender, EventArgs e)
         {
             FunCallSound("Ё");
-
         }
 
-        private void label10_Click(object sender, EventArgs e)
+        private void pictureBox21_Click(object sender, EventArgs e)
         {
             FunCallSound("Ж");
-
         }
 
-        private void label11_Click(object sender, EventArgs e)
+        private void pictureBox22_Click(object sender, EventArgs e)
         {
             FunCallSound("З");
-
         }
 
-        private void label12_Click(object sender, EventArgs e)
+        private void pictureBox23_Click(object sender, EventArgs e)
         {
             FunCallSound("И");
-
         }
 
-        private void label13_Click(object sender, EventArgs e)
+        private void pictureBox24_Click(object sender, EventArgs e)
         {
             FunCallSound("Й");
-
         }
 
-        private void label14_Click(object sender, EventArgs e)
+        private void pictureBox25_Click(object sender, EventArgs e)
         {
             FunCallSound("К");
-
         }
 
-        private void label15_Click(object sender, EventArgs e)
+        private void pictureBox26_Click(object sender, EventArgs e)
         {
             FunCallSound("Қ");
-
         }
 
-        private void label16_Click(object sender, EventArgs e)
+        private void pictureBox27_Click(object sender, EventArgs e)
         {
             FunCallSound("Л");
-
         }
 
-        private void label17_Click(object sender, EventArgs e)
+        private void pictureBox28_Click(object sender, EventArgs e)
         {
             FunCallSound("М");
-
         }
 
-        private void label18_Click(object sender, EventArgs e)
-        {
-            FunCallSound("Н");
-
-        }
-
-        private void label19_Click(object sender, EventArgs e)
+        private void pictureBox29_Click(object sender, EventArgs e)
         {
             FunCallSound("Ң");
-
         }
 
-        private void label20_Click(object sender, EventArgs e)
+        private void pictureBox31_Click(object sender, EventArgs e)
         {
             FunCallSound("О");
-
         }
 
-        private void label21_Click(object sender, EventArgs e)
+        private void pictureBox32_Click(object sender, EventArgs e)
         {
             FunCallSound("Ө");
-
         }
 
-        private void label22_Click(object sender, EventArgs e)
+        private void pictureBox33_Click(object sender, EventArgs e)
         {
             FunCallSound("П");
-
         }
 
-        private void label23_Click(object sender, EventArgs e)
+        private void pictureBox34_Click(object sender, EventArgs e)
         {
             FunCallSound("Р");
-
         }
 
-        private void label24_Click(object sender, EventArgs e)
+        private void pictureBox35_Click(object sender, EventArgs e)
         {
             FunCallSound("С");
-
         }
 
-        private void label25_Click(object sender, EventArgs e)
+        private void pictureBox12_Click(object sender, EventArgs e)
         {
             FunCallSound("Т");
-
         }
 
-        private void label26_Click(object sender, EventArgs e)
+        private void pictureBox13_Click(object sender, EventArgs e)
         {
             FunCallSound("У");
-
         }
 
-        private void label27_Click(object sender, EventArgs e)
+        private void pictureBox14_Click(object sender, EventArgs e)
         {
             FunCallSound("Ұ");
-
         }
 
-        private void label28_Click(object sender, EventArgs e)
+        private void pictureBox15_Click(object sender, EventArgs e)
         {
             FunCallSound("Ү");
-
         }
 
-        private void label29_Click(object sender, EventArgs e)
+        private void pictureBox16_Click(object sender, EventArgs e)
         {
             FunCallSound("Ф");
-
         }
 
-        private void label30_Click(object sender, EventArgs e)
+        private void pictureBox17_Click(object sender, EventArgs e)
         {
             FunCallSound("Х");
-
         }
 
-        private void label31_Click(object sender, EventArgs e)
-        {
-            FunCallSound("Ц");
-
-        }
-
-        private void label32_Click(object sender, EventArgs e)
-        {
-            FunCallSound("Ч");
-
-        }
-
-        private void label33_Click(object sender, EventArgs e)
-        {
-            FunCallSound("Ш");
-
-        }
-
-        private void label34_Click(object sender, EventArgs e)
-        {
-            FunCallSound("Щ");
-
-        }
-
-        private void label35_Click(object sender, EventArgs e)
-        {
-            FunCallSound("Ы");
-
-        }
-
-        private void label36_Click(object sender, EventArgs e)
-        {
-            FunCallSound("І");
-
-        }
-
-        private void label40_Click(object sender, EventArgs e)
+        private void pictureBox18_Click(object sender, EventArgs e)
         {
             FunCallSound("Һ");
-
         }
 
-        private void label37_Click(object sender, EventArgs e)
+        private void pictureBox19_Click(object sender, EventArgs e)
+        {
+            FunCallSound("Ц");
+        }
+
+        private void pictureBox8_Click(object sender, EventArgs e)
+        {
+            FunCallSound("Ч");
+        }
+
+        private void pictureBox9_Click(object sender, EventArgs e)
+        {
+            FunCallSound("Ш");
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            FunCallSound("Щ");
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            FunCallSound("Ы");
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            FunCallSound("І");
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
         {
             FunCallSound("Э");
-
         }
 
-        private void label38_Click(object sender, EventArgs e)
+        private void pictureBox10_Click(object sender, EventArgs e)
         {
             FunCallSound("Ю");
-
         }
 
-        private void label39_Click(object sender, EventArgs e)
+        private void pictureBox11_Click(object sender, EventArgs e)
         {
             FunCallSound("Я");
-
         }
     }
 }

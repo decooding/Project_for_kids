@@ -44,6 +44,7 @@
             // 
             // backbutton
             // 
+            backbutton.BackColor = Color.Transparent;
             backbutton.Image = Properties.Resources.blue_arrow_24;
             backbutton.Location = new Point(12, 12);
             backbutton.Name = "backbutton";
@@ -57,7 +58,7 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(143, 122);
+            pictureBox1.Location = new Point(169, 122);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(188, 185);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -68,7 +69,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(385, 122);
+            pictureBox2.Location = new Point(467, 119);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(185, 188);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -79,7 +80,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(143, 332);
+            pictureBox3.Location = new Point(169, 332);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(187, 189);
             pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -90,7 +91,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(385, 332);
+            pictureBox4.Location = new Point(467, 332);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(185, 189);
             pictureBox4.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -100,9 +101,10 @@
             // 
             // label1
             // 
+            label1.BackColor = Color.Transparent;
             label1.FlatStyle = FlatStyle.Flat;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label1.Location = new Point(83, 30);
+            label1.Location = new Point(148, 35);
             label1.Name = "label1";
             label1.Size = new Size(549, 67);
             label1.TabIndex = 5;
@@ -115,13 +117,16 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
-            ClientSize = new Size(718, 543);
+            BackgroundImage = Properties.Resources._69b90ed4e4087e02faaaccf33a843dfb;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(851, 633);
             Controls.Add(label1);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(backbutton);
+            DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "Matin";
             StartPosition = FormStartPosition.CenterScreen;

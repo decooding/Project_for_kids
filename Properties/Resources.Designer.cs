@@ -63,9 +63,49 @@ namespace Project_for_kids.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _2 {
+            get {
+                object obj = ResourceManager.GetObject("2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _3b54191d83179b231a20125790af21b5 {
             get {
                 object obj = ResourceManager.GetObject("3b54191d83179b231a20125790af21b5", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _69b90ed4e4087e02faaaccf33a843dfb {
+            get {
+                object obj = ResourceManager.GetObject("69b90ed4e4087e02faaaccf33a843dfb", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap aa8cbe67fed87ece4f1b633584279586 {
+            get {
+                object obj = ResourceManager.GetObject("aa8cbe67fed87ece4f1b633584279586", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap alphabet_kids_695012 {
+            get {
+                object obj = ResourceManager.GetObject("alphabet-kids_695012", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -186,6 +226,36 @@ namespace Project_for_kids.Properties {
         internal static System.Drawing.Bitmap zero {
             get {
                 object obj = ResourceManager.GetObject("zero", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Рисунок1 {
+            get {
+                object obj = ResourceManager.GetObject("Рисунок1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Рисунок2 {
+            get {
+                object obj = ResourceManager.GetObject("Рисунок2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Рисунок3 {
+            get {
+                object obj = ResourceManager.GetObject("Рисунок3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

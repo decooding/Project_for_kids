@@ -31,6 +31,14 @@ namespace WinApp.frm.Login
             string userlogin = login.Text;
             string userpassword = password.Text;
 
+            // Проверка на наличие данных перед выполнением запроса
+            if (string.IsNullOrEmpty(firstname) || string.IsNullOrEmpty(lastname) ||
+                string.IsNullOrEmpty(userlogin) || string.IsNullOrEmpty(userpassword))
+            {
+                MessageBox.Show("Барлық мәліметтерді енгізіңіз.");
+                return;
+            }
+
             string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=base.accdb";
 
             using (OleDbConnection connection = new OleDbConnection(connectionString))
@@ -40,39 +48,28 @@ namespace WinApp.frm.Login
                     connection.Open();
 
                     string insertQuery = @"INSERT INTO [User] ([Login], [FirstName], [LastName], [Age], [Password]) 
-                       VALUES (?, ?, ?, ?, ?)";
+               VALUES (?, ?, ?, ?, ?)";
                     string insertResult = @"INSERT INTO [Result] ([id_res], [Math_res], [Letter_res]) 
-                        VALUES ((SELECT TOP 1 [id] FROM [User] WHERE [Login] = ?), 0, 0)";
+                        SELECT TOP 1 [id], 0, 0 FROM [User] WHERE [Login] = ?";
 
-                    using (OleDbConnection dbConnection = new OleDbConnection(connectionString))
+
+                    using (OleDbCommand command = new OleDbCommand(insertQuery, connection))
                     {
-                        try
-                        {
-                            connection.Open();
+                        command.Parameters.AddWithValue("@p1", userlogin);
+                        command.Parameters.AddWithValue("@p2", firstname);
+                        command.Parameters.AddWithValue("@p3", lastname);
+                        command.Parameters.AddWithValue("@p4", userage);
+                        command.Parameters.AddWithValue("@p5", userpassword);
 
-                            using (OleDbCommand command = new OleDbCommand(insertQuery, dbConnection))
-                            {
-                                command.Parameters.AddWithValue("@p1", userlogin);
-                                command.Parameters.AddWithValue("@p2", firstname);
-                                command.Parameters.AddWithValue("@p3", lastname);
-                                command.Parameters.AddWithValue("@p4", userage);
-                                command.Parameters.AddWithValue("@p5", userpassword);
+                        command.ExecuteNonQuery();
 
-                                command.ExecuteNonQuery();
+                        MessageBox.Show("Қолданушы сәтті тіркелді.");
+                    }
 
-                                MessageBox.Show("Қолданушы сәтті тіркелді.");
-                            }
-
-                            using (OleDbCommand command = new OleDbCommand(insertResult, dbConnection))
-                            {
-                                command.Parameters.AddWithValue("@p1", userlogin);
-                                command.ExecuteNonQuery();
-                            }
-                        }
-                        catch (Exception ex)
-                        {
-                            MessageBox.Show(ex.Message);
-                        }
+                    using (OleDbCommand command = new OleDbCommand(insertResult, connection))
+                    {
+                        command.Parameters.AddWithValue("@p1", userlogin);
+                        command.ExecuteNonQuery();
                     }
                 }
                 catch (Exception ex)
@@ -81,5 +78,6 @@ namespace WinApp.frm.Login
                 }
             }
         }
+
     }
 }

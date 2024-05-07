@@ -13,16 +13,17 @@ namespace WinApp.frm
             public int CorrectOptionIndex { get; set; }
             public string? ImageName { get; set; }
             public string? SoundPath { get; set; }
+            public string? QLabel { get; set; }
         }
 
         List<Question> questions = new List<Question>
         {
-            new Question { CorrectOptionIndex = 2, ImageName = "1", SoundPath="applehow"},
-            new Question { CorrectOptionIndex = 2, ImageName = "2", SoundPath="carrot"},
-            new Question { CorrectOptionIndex = 1, ImageName = "3", SoundPath="baloon"},
-            new Question { CorrectOptionIndex = 2, ImageName = "4", SoundPath="velohat"},
-            new Question { CorrectOptionIndex = 2, ImageName = "5", SoundPath="finger"},
-            new Question { CorrectOptionIndex = 2, ImageName = "6", SoundPath="birdhouse"}
+            new Question { CorrectOptionIndex = 2, ImageName = "1", SoundPath="applehow" , QLabel="Әр тәрелкеге алмадан қою үшін, неше алма қажет?" },
+            new Question { CorrectOptionIndex = 2, ImageName = "2", SoundPath="carrot"   , QLabel="Әр қоянға сәбізден беру үшін, неше сәбіз қажет?" },
+            new Question { CorrectOptionIndex = 1, ImageName = "3", SoundPath="baloon"   , QLabel="Әр балаға шардан беру үшін, неше шар қажет?" },
+            new Question { CorrectOptionIndex = 2, ImageName = "4", SoundPath="velohat"  , QLabel="Әр балаға велокаска кию үшін, неше велокаска қажет?" },
+            new Question { CorrectOptionIndex = 2, ImageName = "5", SoundPath="finger"   , QLabel="Әр саусаққа ойыншықтарды кию үшін, неше ойыншық қажет?" },
+            new Question { CorrectOptionIndex = 2, ImageName = "6", SoundPath="birdhouse", QLabel="Әр торғайда ұя болу үшін, неше ұя қажет?" }
         };
 
         private string soundFilePath = @$"{GFold.GPath}resource\\sound\\";
@@ -66,6 +67,7 @@ namespace WinApp.frm
 
         private void UpdateImagesAndSound(int index)
         {
+            label1.Text = questions[index].QLabel;
             pictureBox1.ImageLocation = Path.Combine(imagesFolderPath, $"{questions[index].ImageName}0.png");
             pictureBox2.ImageLocation = Path.Combine(imagesFolderPath, $"{questions[index].ImageName}1.png");
             pictureBox3.ImageLocation = Path.Combine(imagesFolderPath, $"{questions[index].ImageName}2.png");

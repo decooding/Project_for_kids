@@ -95,20 +95,20 @@ namespace Project_for_kids.frm.Letter
         {
             var question = store.StorageValue[currentQuestIndex + 1];
 
-
             do
             {
                 if (selectedOption == question.correctanswer[addindex])
                 {
+                    soundPlayer = new SoundPlayer(Path.Combine(soundFolderPath, $"succ.wav"));
+                    soundPlayer.Play();
                     ((PictureBox)Controls.Find($"pictureBox{selectedOption}", true)[0]).Visible = false;
                     addindex++;
                 }
                 else
                 {
-                    soundPlayer = new SoundPlayer(Path.Combine(soundFolderPath, $"succ.wav"));
-                    soundPlayer.Play();
-                    return; 
+                    return;
                 }
+
             } while (addindex < question.correctanswer.Count);
 
             if (addindex == question.correctanswer.Count)
@@ -145,11 +145,9 @@ namespace Project_for_kids.frm.Letter
                     //MessageBox.Show($"Тест завершен. Правильных ответов: {counter} из {store.StorageValue.Count}");
                     soundPlayer = new SoundPlayer(Path.Combine(soundFolderPath, $"finish.wav"));
                     soundPlayer.Play();
-
                     auth.SaveTestResults(counter, "Letter_res");
                     counter = 0;
                     currentQuestIndex = 0;
-                    DisplayQuestion(currentQuestIndex);
                 }
             }
         }

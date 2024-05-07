@@ -1,0 +1,83 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Project_for_kids\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{351CA59C-47C2-4308-998A-46D8733C2A55}|Project_for_kids.csproj|g:\\project_for_kids\\frm\\login\\sigin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351CA59C-47C2-4308-998A-46D8733C2A55}|Project_for_kids.csproj|solutionrelative:frm\\login\\sigin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351CA59C-47C2-4308-998A-46D8733C2A55}|Project_for_kids.csproj|G:\\Project_for_kids\\frm\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351CA59C-47C2-4308-998A-46D8733C2A55}|Project_for_kids.csproj|solutionrelative:frm\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351CA59C-47C2-4308-998A-46D8733C2A55}|Project_for_kids.csproj|G:\\Project_for_kids\\frm\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{351CA59C-47C2-4308-998A-46D8733C2A55}|Project_for_kids.csproj|solutionrelative:frm\\login\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351CA59C-47C2-4308-998A-46D8733C2A55}|Project_for_kids.csproj|G:\\Project_for_kids\\frm\\login\\sigin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{351CA59C-47C2-4308-998A-46D8733C2A55}|Project_for_kids.csproj|solutionrelative:frm\\login\\sigin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SigIn.cs",
+              "DocumentMoniker": "G:\\Project_for_kids\\frm\\Login\\SigIn.cs",
+              "RelativeDocumentMoniker": "frm\\Login\\SigIn.cs",
+              "ToolTip": "G:\\Project_for_kids\\frm\\Login\\SigIn.cs",
+              "RelativeToolTip": "frm\\Login\\SigIn.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAqwDUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T12:25:44.602Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SigIn.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "G:\\Project_for_kids\\frm\\Login\\SigIn.cs",
+              "RelativeDocumentMoniker": "frm\\Login\\SigIn.cs",
+              "ToolTip": "G:\\Project_for_kids\\frm\\Login\\SigIn.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "frm\\Login\\SigIn.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T12:25:41.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LogIn.cs",
+              "DocumentMoniker": "G:\\Project_for_kids\\frm\\Login\\LogIn.cs",
+              "RelativeDocumentMoniker": "frm\\Login\\LogIn.cs",
+              "ToolTip": "G:\\Project_for_kids\\frm\\Login\\LogIn.cs",
+              "RelativeToolTip": "frm\\Login\\LogIn.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAIwBwAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T12:25:06.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LogIn.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "G:\\Project_for_kids\\frm\\Login\\LogIn.cs",
+              "RelativeDocumentMoniker": "frm\\Login\\LogIn.cs",
+              "ToolTip": "G:\\Project_for_kids\\frm\\Login\\LogIn.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "frm\\Login\\LogIn.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-07T12:25:02.3Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

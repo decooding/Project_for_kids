@@ -36,12 +36,14 @@
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
+            label6 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
+            pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = Properties.Resources.blue_arrow_24;
             pictureBox1.Location = new Point(12, 12);
             pictureBox1.Name = "pictureBox1";
@@ -54,7 +56,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(148, 12);
+            pictureBox2.Location = new Point(208, 89);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(166, 144);
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -64,9 +66,10 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = SystemColors.ControlLightLight;
-            label1.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold, GraphicsUnit.Point, 204);
-            label1.Location = new Point(183, 172);
+            label1.BackColor = Color.Transparent;
+            label1.Font = new Font("Segoe UI Semibold", 24F, FontStyle.Bold | FontStyle.Underline, GraphicsUnit.Point, 204);
+            label1.ForeColor = Color.MidnightBlue;
+            label1.Location = new Point(248, 245);
             label1.Name = "label1";
             label1.Size = new Size(77, 45);
             label1.TabIndex = 2;
@@ -78,7 +81,7 @@
             label2.BackColor = Color.Gold;
             label2.Font = new Font("Comic Sans MS", 48F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label2.ForeColor = Color.Red;
-            label2.Location = new Point(12, 233);
+            label2.Location = new Point(52, 322);
             label2.Margin = new Padding(0);
             label2.Name = "label2";
             label2.Size = new Size(85, 90);
@@ -92,7 +95,7 @@
             label3.BackColor = Color.Gold;
             label3.Font = new Font("Comic Sans MS", 48F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label3.ForeColor = Color.Red;
-            label3.Location = new Point(130, 233);
+            label3.Location = new Point(181, 322);
             label3.Margin = new Padding(0);
             label3.Name = "label3";
             label3.Size = new Size(77, 90);
@@ -106,7 +109,7 @@
             label4.BackColor = Color.Gold;
             label4.Font = new Font("Comic Sans MS", 48F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label4.ForeColor = Color.Red;
-            label4.Location = new Point(249, 233);
+            label4.Location = new Point(302, 322);
             label4.Margin = new Padding(0);
             label4.Name = "label4";
             label4.Size = new Size(83, 90);
@@ -120,7 +123,7 @@
             label5.BackColor = Color.Gold;
             label5.Font = new Font("Comic Sans MS", 48F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point, 204);
             label5.ForeColor = Color.Red;
-            label5.Location = new Point(375, 233);
+            label5.Location = new Point(429, 322);
             label5.Margin = new Padding(0);
             label5.Name = "label5";
             label5.Size = new Size(78, 90);
@@ -128,12 +131,28 @@
             label5.Text = "С";
             label5.Click += label5_Click;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = Color.Transparent;
+            label6.Font = new Font("Segoe UI Semibold", 16F, FontStyle.Bold);
+            label6.Location = new Point(119, 12);
+            label6.Name = "label6";
+            label6.Size = new Size(353, 60);
+            label6.TabIndex = 7;
+            label6.Text = "Суретке қарап не екенің анықта \r\nжәне жетіспейтін әріпті танда";
+            label6.TextAlign = ContentAlignment.MiddleCenter;
+            // 
             // Adder
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
             BackColor = SystemColors.ControlLightLight;
-            ClientSize = new Size(478, 345);
+            BackgroundImage = Properties.Resources.alphabet_kids_695012;
+            BackgroundImageLayout = ImageLayout.Stretch;
+            ClientSize = new Size(565, 439);
+            Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
@@ -162,5 +181,6 @@
         private Label label3;
         private Label label4;
         private Label label5;
+        private Label label6;
     }
 }

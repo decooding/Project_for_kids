@@ -1,22 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="frm\Adder.cs">
+    <Compile Update="frm\Letters\Adder.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frm\Matin.cs">
+    <Compile Update="frm\Letters\Finder.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frm\MathNumber.cs">
+    <Compile Update="frm\Letters\Fulld.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm\Letters\Matin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm\Letters\Whatis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm\Maths\Summer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm\Reader\Activites.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm\Reader\Animals.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm\Reader\Colors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm\Reader\Feelings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm\Reader\Figures.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm\Reader\Numbers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm\panel\AdminSubPanel.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frm\panel\Helper.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="frm\Letters\LetterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="frm\panel\MainForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frm\Alphabet.cs">
+    <Compile Update="frm\Reader\Alphabet.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frm\Login\LogIn.cs">
@@ -25,19 +58,25 @@
     <Compile Update="frm\Login\SigIn.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frm\MathCount.cs">
+    <Compile Update="frm\Maths\MathCount.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frm\MathLess.cs">
+    <Compile Update="frm\Maths\MathLess.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frm\MathMore.cs">
+    <Compile Update="frm\Maths\MathMore.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="frm\MathRow.cs">
+    <Compile Update="frm\Maths\MathRow.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frm\panel\AdminPanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm\Maths\MathForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frm\Reader\ReadingForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="frm\Video\VideoPanel.cs">
@@ -45,7 +84,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Update="frm\MathCount.resx">
+    <EmbeddedResource Update="frm\Maths\MathCount.resx">
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Update="frm\Video\VideoPanel.resx">

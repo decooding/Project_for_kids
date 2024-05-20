@@ -11,8 +11,6 @@ G:\Project_for_kids\bin\Debug\net8.0-windows\System.Security.Cryptography.Protec
 G:\Project_for_kids\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Data.OleDb.dll
 G:\Project_for_kids\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.EventLog.dll
 G:\Project_for_kids\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Diagnostics.PerformanceCounter.dll
-G:\Project_for_kids\bin\Debug\net8.0-windows\MySql.Data.dll
-G:\Project_for_kids\bin\Debug\net8.0-windows\MySql.Data.xml
 G:\Project_for_kids\bin\Debug\net8.0-windows\Interop.WMPLib.dll
 G:\Project_for_kids\bin\Debug\net8.0-windows\AxInterop.WMPLib.dll
 G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.csproj.AssemblyReference.cache
@@ -26,7 +24,6 @@ G:\Project_for_kids\obj\Debug\net8.0-windows\WinApp.frm.Login.SigIn.resources
 G:\Project_for_kids\obj\Debug\net8.0-windows\Uniclo.frm.MathCount.resources
 G:\Project_for_kids\obj\Debug\net8.0-windows\WinApp.frm.MathLess.resources
 G:\Project_for_kids\obj\Debug\net8.0-windows\Program_for_kids.frm.MathMore.resources
-G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.frm.Math.MathNumber.resources
 G:\Project_for_kids\obj\Debug\net8.0-windows\Program_for_kids.frm.MathRow.resources
 G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.frm.Letter.Matin.resources
 G:\Project_for_kids\obj\Debug\net8.0-windows\WinApp.frm.panel.AdminPanel.resources
@@ -46,3 +43,17 @@ G:\Project_for_kids\obj\Debug\net8.0-windows\refint\Project_for_kids.dll
 G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.pdb
 G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.genruntimeconfig.cache
 G:\Project_for_kids\obj\Debug\net8.0-windows\ref\Project_for_kids.dll
+G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.frm.panel.LetterForm.resources
+G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.frm.panel.MathForm.resources
+G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.frm.panel.ReadingForm.resources
+G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.frm.Math.Numbers.resources
+G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.frm.panel.AdminSubPanel.resources
+G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.frm.Letters.Finder.resources
+G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.frm.Letters.Fulld.resources
+G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.frm.Letters.Whatis.resources
+G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.frm.Maths.Summer.resources
+G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.frm.Reader.Activites.resources
+G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.frm.Reader.Animals.resources
+G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.frm.Reader.Colors.resources
+G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.frm.Reader.Feelings.resources
+G:\Project_for_kids\obj\Debug\net8.0-windows\Project_for_kids.frm.Reader.Figures.resources

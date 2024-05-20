@@ -8,13 +8,13 @@ namespace WinApp.frm.Login
 {
     public partial class LogIn : Form
     {
-        private OleDbConnection connection; // Объявляем поле для соединения
+        private OleDbConnection connection;
 
         public LogIn()
         {
             InitializeComponent();
             string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=base.accdb";
-            connection = new OleDbConnection(connectionString); // Инициализируем соединение в конструкторе
+            connection = new OleDbConnection(connectionString); 
         }
 
         private void AuthenticateUser(string username, string password)

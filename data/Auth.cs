@@ -1,4 +1,9 @@
-﻿using System.Data.OleDb;
+﻿using System;
+using System.Data.OleDb;
+using System.Diagnostics;
+using System.Media;
+using System.Windows.Forms;
+
 namespace Project_for_kids.data
 {
     public class Auth
@@ -8,14 +13,22 @@ namespace Project_for_kids.data
             public static string GPath = @"G:\Project_for_kids\";
         }
 
-
         public static int Id { get; set; }
-        public static string ?Username { get; set; }
-        public static string ?Password { get; set; }
+        public static string? Username { get; set; }
+        public static string? Password { get; set; }
         public static int MathBall { get; set; }
         public static int LetterBall { get; set; }
 
-        public string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=base.accdb";
+        private readonly string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=base.accdb";
+
+        private Stopwatch stopwatch;
+        private SoundPlayer soundPlayer;
+
+        public void StartTimer()
+        {
+            stopwatch = new Stopwatch();
+            stopwatch.Start();
+        }
 
         public int SeeTestBall()
         {
@@ -52,20 +65,16 @@ namespace Project_for_kids.data
                 {
                     connection.Open();
 
-                    // Получить текущее значение из базы данных
                     string selectQuery = $"SELECT [{table}] FROM [Result] WHERE [id_res] = ?";
                     using (OleDbCommand selectCommand = new OleDbCommand(selectQuery, connection))
                     {
                         selectCommand.Parameters.AddWithValue("@p1", Id);
                         object currentScore = selectCommand.ExecuteScalar();
 
-                        // Проверяем, не является ли текущее значение null
                         int currentValue = (currentScore != DBNull.Value) ? Convert.ToInt32(currentScore) : 0;
 
-                        // Выполнить операцию суммирования
                         int newScore = currentValue + score;
 
-                        // Обновить значение в базе данных
                         string updateQuery = $"UPDATE [Result] SET [{table}] = ? WHERE [id_res] = ?";
                         using (OleDbCommand updateCommand = new OleDbCommand(updateQuery, connection))
                         {
@@ -75,7 +84,12 @@ namespace Project_for_kids.data
                             int rowsAffected = updateCommand.ExecuteNonQuery();
                             if (rowsAffected > 0)
                             {
-                                MessageBox.Show("Құттықтаймын сіз барлығын сәтті өттіңіз!");
+                                stopwatch.Stop();
+                                TimeSpan elapsed = stopwatch.Elapsed;
+                                soundPlayer = new SoundPlayer(@$"{GFold.GPath}resource\sound\finish.wav");
+                                soundPlayer.Play();
+                                MessageBox.Show($"Құттықтайм!\n Барлық тапсырманы сәтті өттіңіз\n Орындау уақыты: {elapsed:mm\\:ss}");
+                                stopwatch.Reset();
                             }
                             else
                             {

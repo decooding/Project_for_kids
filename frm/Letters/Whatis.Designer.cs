@@ -47,13 +47,13 @@
             label5.FlatStyle = FlatStyle.Flat;
             label5.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label5.ForeColor = SystemColors.InfoText;
-            label5.Location = new Point(293, 421);
+            label5.Location = new Point(273, 421);
             label5.Margin = new Padding(10);
             label5.Name = "label5";
             label5.Padding = new Padding(25);
-            label5.Size = new Size(108, 85);
+            label5.Size = new Size(175, 85);
             label5.TabIndex = 23;
-            label5.Text = "Тер";
+            label5.Text = "ІРІМШІК";
             label5.Click += label5_Click;
             // 
             // label4
@@ -63,13 +63,13 @@
             label4.FlatStyle = FlatStyle.Flat;
             label4.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label4.ForeColor = SystemColors.InfoText;
-            label4.Location = new Point(61, 421);
+            label4.Location = new Point(23, 421);
             label4.Margin = new Padding(10);
             label4.Name = "label4";
             label4.Padding = new Padding(25);
-            label4.Size = new Size(109, 85);
+            label4.Size = new Size(221, 85);
             label4.TabIndex = 22;
-            label4.Text = "Дер";
+            label4.Text = "КІТАПХАНА";
             label4.Click += label4_Click;
             // 
             // label3
@@ -79,13 +79,13 @@
             label3.FlatStyle = FlatStyle.Flat;
             label3.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label3.ForeColor = SystemColors.InfoText;
-            label3.Location = new Point(293, 316);
+            label3.Location = new Point(263, 316);
             label3.Margin = new Padding(10);
             label3.Name = "label3";
             label3.Padding = new Padding(25);
-            label3.Size = new Size(109, 85);
+            label3.Size = new Size(220, 85);
             label3.TabIndex = 21;
-            label3.Text = "Дар";
+            label3.Text = "ВЕЛОСИПЕД";
             label3.Click += label3_Click;
             // 
             // pictureBox2
@@ -103,9 +103,9 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(61, 84);
+            pictureBox1.Location = new Point(61, 69);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(341, 209);
+            pictureBox1.Size = new Size(387, 224);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 19;
             pictureBox1.TabStop = false;
@@ -117,13 +117,13 @@
             label2.FlatStyle = FlatStyle.Flat;
             label2.Font = new Font("Comic Sans MS", 18F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label2.ForeColor = SystemColors.InfoText;
-            label2.Location = new Point(61, 316);
+            label2.Location = new Point(23, 316);
             label2.Margin = new Padding(10);
             label2.Name = "label2";
             label2.Padding = new Padding(25);
-            label2.Size = new Size(111, 85);
+            label2.Size = new Size(210, 85);
             label2.TabIndex = 18;
-            label2.Text = "Лай";
+            label2.Text = "КІТАПҚАП";
             label2.Click += label2_Click;
             // 
             // label1
@@ -140,7 +140,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(424, 533);
+            ClientSize = new Size(492, 533);
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);

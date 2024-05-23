@@ -148,8 +148,10 @@
             Controls.Add(pictureBox1);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "Whatis";
-            Text = "Whatis";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "3 Деңгей";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

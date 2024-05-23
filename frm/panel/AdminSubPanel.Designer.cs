@@ -254,8 +254,9 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(218, 204);
             Controls.Add(tabControl1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "AdminSubPanel";
-            Text = "AdminSubPanel";
+            StartPosition = FormStartPosition.CenterScreen;
             tabControl1.ResumeLayout(false);
             tabPage1.ResumeLayout(false);
             tabPage1.PerformLayout();

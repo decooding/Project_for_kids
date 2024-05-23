@@ -34,6 +34,7 @@
             button6 = new Button();
             button7 = new Button();
             pictureBox1 = new PictureBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -116,21 +117,37 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Comic Sans MS", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label2.ForeColor = Color.Green;
+            label2.Location = new Point(112, 12);
+            label2.Name = "label2";
+            label2.Size = new Size(197, 49);
+            label2.TabIndex = 20;
+            label2.Text = "Сауат ашу";
+            // 
             // LetterForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(436, 450);
+            Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(button9);
             Controls.Add(button10);
             Controls.Add(button3);
             Controls.Add(button6);
             Controls.Add(button7);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "LetterForm";
-            Text = "LetterForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Сауат ашу";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -140,5 +157,6 @@
         private Button button6;
         private Button button7;
         private PictureBox pictureBox1;
+        private Label label2;
     }
 }

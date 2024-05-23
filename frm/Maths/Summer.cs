@@ -65,7 +65,7 @@ namespace Project_for_kids.frm.Maths
 
                 if (counter == 12)
                 {
-                    auth.SaveTestResults(counter, "Math_res");
+                    auth.SaveTestResults(counter, "Math_res", "5 Деңгей");
                 }
                 else
                 {

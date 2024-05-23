@@ -1,4 +1,5 @@
 ﻿using Project_for_kids;
+using Project_for_kids.frm.panel;
 using System.Media;
 using static Project_for_kids.data.Auth;
 
@@ -22,7 +23,7 @@ namespace WinApp.frm
         }
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            MainForm form3 = new();
+            ReadingForm form3 = new();
             this.Close();
             form3.Show();
         }

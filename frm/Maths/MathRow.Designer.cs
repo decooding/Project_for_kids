@@ -106,7 +106,7 @@
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "MathRow";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "4 деңгей";
+            Text = "3  Деңгей";
             Load += MathRow_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

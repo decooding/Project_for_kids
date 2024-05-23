@@ -91,7 +91,7 @@ namespace Program_for_kids.frm
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "MathMore";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "3 деңгей";
+            Text = "2  Деңгей";
             Load += MathMore_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

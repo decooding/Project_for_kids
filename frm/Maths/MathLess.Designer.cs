@@ -119,7 +119,7 @@
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "MathLess";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "2 деңгей";
+            Text = "4  Деңгей";
             Load += MathLess_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

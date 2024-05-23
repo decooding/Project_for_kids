@@ -1,5 +1,6 @@
 ﻿
 using Project_for_kids.data;
+using Project_for_kids.frm.panel;
 using System.Media;
 using System.Windows.Forms;
 using WinApp.frm;
@@ -143,7 +144,7 @@ namespace Project_for_kids.frm.Letter
                 }
                 else
                 {
-                    auth.SaveTestResults(counter, "Letter_res");
+                    auth.SaveTestResults(counter, "Letter_res", "5 деңгей");
                     counter = 0;
                     currentQuestIndex = 0;
                 }
@@ -175,7 +176,7 @@ namespace Project_for_kids.frm.Letter
 
         private void backbutton_Click(object sender, EventArgs e)
         {
-            MainForm form3 = new();
+            LetterForm form3 = new();
             this.Hide();
             form3.Show();
         }

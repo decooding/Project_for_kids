@@ -1,4 +1,5 @@
-﻿using System.Media;
+﻿using Project_for_kids.frm.panel;
+using System.Media;
 using static Project_for_kids.data.Auth;
 
 namespace Project_for_kids.frm.Math
@@ -36,7 +37,7 @@ namespace Project_for_kids.frm.Math
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
-            MainForm secwin = new();
+            ReadingForm secwin = new();
             this.Hide();
             secwin.Show();
 

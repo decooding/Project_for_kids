@@ -72,7 +72,7 @@ namespace Project_for_kids.frm.Letters
                 }
                 else
                 {
-                    auth.SaveTestResults(counter, "Letter_res");
+                    auth.SaveTestResults(counter, "Letter_res", "2 Деңгей");
                     counter = 0;
                     currentQuestIndex = 0;
                 }

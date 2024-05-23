@@ -1,4 +1,5 @@
-﻿using static Project_for_kids.data.Auth;
+﻿using Project_for_kids.frm.panel;
+using static Project_for_kids.data.Auth;
 
 namespace Project_for_kids.frm.Video
 {
@@ -11,7 +12,7 @@ namespace Project_for_kids.frm.Video
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            MainForm main = new();
+            ReadingForm main = new();
             MediaPlayer1.close();
             this.Hide();
             main.Show();

@@ -165,7 +165,7 @@
             Name = "Adder";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "9 деңгей";
+            Text = "1 Деңгей";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ResumeLayout(false);

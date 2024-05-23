@@ -329,8 +329,10 @@
             Controls.Add(label11);
             Controls.Add(panel1);
             Controls.Add(MediaPlayer1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "VideoPanel";
             SizeGripStyle = SizeGripStyle.Show;
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "VideoPanel";
             ((System.ComponentModel.ISupportInitialize)MediaPlayer1).EndInit();
             panel1.ResumeLayout(false);

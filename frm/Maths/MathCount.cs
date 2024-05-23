@@ -68,7 +68,7 @@ namespace Uniclo.frm
 
                 if (currentImageIndex == 17)
                 {
-                    auth.SaveTestResults(counter, "Math_res");
+                    auth.SaveTestResults(counter, "Math_res", "1  Деңгей");
                 }
                 else
                 {

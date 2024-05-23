@@ -136,6 +136,9 @@
   <data name="blue-arrow-24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resource\blue-arrow-24.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="69b90ed4e4087e02faaaccf33a843dfb" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resource\background\69b90ed4e4087e02faaaccf33a843dfb.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,13 +172,16 @@
   <data name="image_1711286042112" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resource\san\image_1711286042112.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1614334899_47-p-prosto-raznotsvetnii-fon-62" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1614334899_47-p-prosto-raznotsvetnii-fon-62.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="alphabet-kids_695012" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resource\background\alphabet-kids_695012.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="aa8cbe67fed87ece4f1b633584279586" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\resource\background\aa8cbe67fed87ece4f1b633584279586.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1675602447_gas-kvas-com-p-sovmeshchennie-zhivotnie-risunok-39" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1675602447_gas-kvas-com-p-sovmeshchennie-zhivotnie-risunok-39.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

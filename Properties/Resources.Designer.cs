@@ -63,6 +63,26 @@ namespace Project_for_kids.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1614334899_47_p_prosto_raznotsvetnii_fon_62 {
+            get {
+                object obj = ResourceManager.GetObject("1614334899_47-p-prosto-raznotsvetnii-fon-62", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1675602447_gas_kvas_com_p_sovmeshchennie_zhivotnie_risunok_39 {
+            get {
+                object obj = ResourceManager.GetObject("1675602447_gas-kvas-com-p-sovmeshchennie-zhivotnie-risunok-39", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _2 {
             get {
                 object obj = ResourceManager.GetObject("2", resourceCulture);

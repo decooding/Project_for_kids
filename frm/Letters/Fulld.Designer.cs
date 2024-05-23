@@ -148,8 +148,10 @@
             Controls.Add(pictureBox1);
             Controls.Add(label2);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "Fulld";
-            Text = "Fulld";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "4 Деңгей";
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);

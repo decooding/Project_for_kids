@@ -48,7 +48,7 @@
             button5.FlatStyle = FlatStyle.Flat;
             button5.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button5.ForeColor = Color.Transparent;
-            button5.Location = new Point(149, 26);
+            button5.Location = new Point(157, 12);
             button5.Name = "button5";
             button5.Padding = new Padding(8);
             button5.Size = new Size(48, 48);
@@ -64,7 +64,7 @@
             button2.FlatStyle = FlatStyle.Flat;
             button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button2.ForeColor = Color.CadetBlue;
-            button2.Location = new Point(226, 26);
+            button2.Location = new Point(234, 12);
             button2.Name = "button2";
             button2.Padding = new Padding(8);
             button2.Size = new Size(48, 48);
@@ -80,7 +80,7 @@
             button1.FlatStyle = FlatStyle.Flat;
             button1.Font = new Font("Century", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button1.ForeColor = Color.Transparent;
-            button1.Location = new Point(302, 26);
+            button1.Location = new Point(310, 12);
             button1.Name = "button1";
             button1.Padding = new Padding(10);
             button1.Size = new Size(48, 48);
@@ -152,7 +152,7 @@
             button4.Name = "button4";
             button4.Size = new Size(325, 47);
             button4.TabIndex = 22;
-            button4.Text = "Фигуралар";
+            button4.Text = "Пішімдер";
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
@@ -181,8 +181,10 @@
             Controls.Add(button5);
             Controls.Add(button2);
             Controls.Add(button1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "ReadingForm";
-            Text = "ReadingForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Оқыту формасы";
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ResumeLayout(false);
         }

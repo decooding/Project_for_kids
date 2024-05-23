@@ -14,8 +14,10 @@ namespace WinApp.frm.panel
         private readonly string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=base.accdb";
         private OleDbCommand userSelectCommand;
         private OleDbCommand resultSelectCommand;
+        private OleDbCommand levelSelectCommand;
         private DataSet userDataSet;
         private DataSet resultDataSet;
+        private DataSet lvlDataSet;
 
         public AdminPanel() => InitializeComponent();
 
@@ -29,18 +31,23 @@ namespace WinApp.frm.panel
 
                     userSelectCommand = new OleDbCommand("SELECT * FROM [User]", connection);
                     resultSelectCommand = new OleDbCommand("SELECT * FROM [Result]", connection);
+                    levelSelectCommand = new OleDbCommand("SELECT * FROM [lvl]", connection);
 
                     OleDbDataAdapter userAdapter = new OleDbDataAdapter(userSelectCommand);
                     OleDbDataAdapter resultAdapter = new OleDbDataAdapter(resultSelectCommand);
+                    OleDbDataAdapter levelAdapter = new OleDbDataAdapter(levelSelectCommand);
 
                     userDataSet = new DataSet();
                     resultDataSet = new DataSet();
+                    lvlDataSet = new DataSet();
 
                     userAdapter.Fill(userDataSet, "UserTable");
                     resultAdapter.Fill(resultDataSet, "ResultTable");
+                    levelAdapter.Fill(lvlDataSet, "LevelTable");
 
                     dataGridView1.DataSource = userDataSet.Tables["UserTable"];
-                    dataGridView2.DataSource = resultDataSet.Tables["ResultTable"];
+                    dataGridView3.DataSource = resultDataSet.Tables["ResultTable"];
+                    dataGridView2.DataSource = lvlDataSet.Tables["LevelTable"];
                 }
                 catch (Exception ex)
                 {
@@ -104,11 +111,11 @@ namespace WinApp.frm.panel
                     if (userDataTable.Rows.Count > 0 || resultDataTable.Rows.Count > 0)
                     {
                         dataGridView1.DataSource = userDataTable;
-                        dataGridView2.DataSource = resultDataTable;
+                        dataGridView3.DataSource = resultDataTable;
                     }
                     else
                     {
-                        MessageBox.Show("No records found.");
+                        MessageBox.Show("Жазба табылмады :(");
                     }
                 }
                 catch (Exception ex)
@@ -139,12 +146,12 @@ namespace WinApp.frm.panel
 
                     if (userRows > 0 && resultRows > 0)
                     {
-                        MessageBox.Show("Record deleted successfully.");
+                        MessageBox.Show("Дерек сәтті жойылды");
                         LoadDataTable();
                     }
                     else
                     {
-                        MessageBox.Show("No records found to delete.");
+                        MessageBox.Show("Деректер табылмады");
                     }
                 }
                 catch (Exception ex)
@@ -163,37 +170,43 @@ namespace WinApp.frm.panel
         {
             using (StreamWriter writer = new StreamWriter(Path.Combine(GFold.GPath, fileName)))
             {
-                // Экспорт данных из таблицы UserTable
+                writer.WriteLine($"Файлдың экпортталған уақыты: {DateTime.Now}");
+
                 if (userDataSet.Tables.Contains("UserTable"))
                 {
                     DataTable userTable = userDataSet.Tables["UserTable"];
-                    writer.WriteLine("User Table Data:");
+                    writer.WriteLine("Қолданушылар:");
                     foreach (DataColumn column in userTable.Columns)
                     {
-                        writer.Write(column.ColumnName + "\t");
+                        if (column.ColumnName != "password")
+                        {
+                            writer.Write(column.ColumnName + "\t");
+                        }
                     }
                     writer.WriteLine();
 
                     foreach (DataRow row in userTable.Rows)
                     {
-                        foreach (var item in row.ItemArray)
+                        foreach (DataColumn column in userTable.Columns)
                         {
-                            writer.Write(item.ToString() + "\t");
+                            if (column.ColumnName != "password")
+                            {
+                                writer.Write(row[column].ToString() + "\t");
+                            }
                         }
                         writer.WriteLine();
                     }
-                    writer.WriteLine(); // Добавить пустую строку между таблицами
+                    writer.WriteLine();
                 }
                 else
                 {
                     writer.WriteLine("User Table not found.");
                 }
 
-                // Экспорт данных из таблицы ResultTable
                 if (resultDataSet.Tables.Contains("ResultTable"))
                 {
                     DataTable resultTable = resultDataSet.Tables["ResultTable"];
-                    writer.WriteLine("Result Table Data:");
+                    writer.WriteLine("Жалпы ұпай саны");
                     foreach (DataColumn column in resultTable.Columns)
                     {
                         writer.Write(column.ColumnName + "\t");
@@ -208,15 +221,43 @@ namespace WinApp.frm.panel
                         }
                         writer.WriteLine();
                     }
+                    writer.WriteLine();
                 }
                 else
                 {
                     writer.WriteLine("Result Table not found.");
                 }
+
+                if (lvlDataSet.Tables.Contains("LevelTable"))
+                {
+                    DataTable levelTable = lvlDataSet.Tables["LevelTable"];
+                    writer.WriteLine("Қолданушы ұпайлары:");
+                    foreach (DataColumn column in levelTable.Columns)
+                    {
+                        writer.Write(column.ColumnName + "\t");
+                    }
+                    writer.WriteLine();
+
+                    foreach (DataRow row in levelTable.Rows)
+                    {
+                        foreach (var item in row.ItemArray)
+                        {
+                            writer.Write(item.ToString() + "\t");
+                        }
+                        writer.WriteLine();
+                    }
+                    writer.WriteLine();
+                }
+                else
+                {
+                    writer.WriteLine("Level Table not found.");
+                }
+
             }
 
-            MessageBox.Show($"Data exported to {fileName}");
+            MessageBox.Show($"Деректер қоры сәтті экспортталды. Файл аты: {fileName}");
         }
+
 
     }
 }

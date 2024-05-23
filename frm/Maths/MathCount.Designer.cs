@@ -181,7 +181,7 @@
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "MathCount";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "1 деңгей";
+            Text = "1  Деңгей";
             Load += MathCount_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

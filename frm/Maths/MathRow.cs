@@ -46,7 +46,7 @@ namespace Program_for_kids.frm
 
                 if (counter == 8)
                 {
-                    auth.SaveTestResults(counter, "Math_res");
+                    auth.SaveTestResults(counter, "Math_res", "3  Деңгей");
                 }
                 else
                 {

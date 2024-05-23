@@ -34,6 +34,7 @@
             button6 = new Button();
             button7 = new Button();
             pictureBox1 = new PictureBox();
+            label2 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -42,7 +43,7 @@
             button9.BackColor = Color.Chocolate;
             button9.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button9.ForeColor = SystemColors.ControlLightLight;
-            button9.Location = new Point(54, 409);
+            button9.Location = new Point(58, 374);
             button9.Name = "button9";
             button9.Size = new Size(325, 54);
             button9.TabIndex = 17;
@@ -56,7 +57,7 @@
             button10.FlatStyle = FlatStyle.Flat;
             button10.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button10.ForeColor = SystemColors.ButtonHighlight;
-            button10.Location = new Point(54, 340);
+            button10.Location = new Point(58, 305);
             button10.Name = "button10";
             button10.Size = new Size(325, 47);
             button10.TabIndex = 16;
@@ -69,7 +70,7 @@
             button3.BackColor = Color.Green;
             button3.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button3.ForeColor = SystemColors.ControlLightLight;
-            button3.Location = new Point(54, 268);
+            button3.Location = new Point(58, 233);
             button3.Name = "button3";
             button3.Size = new Size(325, 53);
             button3.TabIndex = 15;
@@ -82,7 +83,7 @@
             button6.BackColor = Color.YellowGreen;
             button6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button6.ForeColor = SystemColors.ControlLightLight;
-            button6.Location = new Point(54, 195);
+            button6.Location = new Point(58, 160);
             button6.Name = "button6";
             button6.Size = new Size(325, 54);
             button6.TabIndex = 14;
@@ -96,7 +97,7 @@
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button7.ForeColor = SystemColors.ButtonHighlight;
-            button7.Location = new Point(54, 126);
+            button7.Location = new Point(58, 91);
             button7.Name = "button7";
             button7.Size = new Size(325, 47);
             button7.TabIndex = 13;
@@ -116,21 +117,37 @@
             pictureBox1.TabStop = false;
             pictureBox1.Click += pictureBox1_Click;
             // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Comic Sans MS", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
+            label2.ForeColor = Color.Orange;
+            label2.Location = new Point(114, 12);
+            label2.Name = "label2";
+            label2.Size = new Size(227, 49);
+            label2.TabIndex = 19;
+            label2.Text = "Математика";
+            // 
             // MathForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(459, 520);
+            ClientSize = new Size(442, 462);
+            Controls.Add(label2);
             Controls.Add(pictureBox1);
             Controls.Add(button9);
             Controls.Add(button10);
             Controls.Add(button3);
             Controls.Add(button6);
             Controls.Add(button7);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "MathForm";
-            Text = "MathForm";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Математика";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -140,5 +157,6 @@
         private Button button6;
         private Button button7;
         private PictureBox pictureBox1;
+        private Label label2;
     }
 }

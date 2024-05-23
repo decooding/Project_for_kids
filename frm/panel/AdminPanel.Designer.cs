@@ -30,7 +30,7 @@
         {
             label1 = new Label();
             dataGridView1 = new DataGridView();
-            dataGridView2 = new DataGridView();
+            dataGridView3 = new DataGridView();
             label2 = new Label();
             idTextBox = new TextBox();
             label11 = new Label();
@@ -40,7 +40,10 @@
             Updatebtn = new Button();
             selectBtn = new Button();
             button1 = new Button();
+            label3 = new Label();
+            dataGridView2 = new DataGridView();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).BeginInit();
             SuspendLayout();
             // 
@@ -61,13 +64,13 @@
             dataGridView1.Size = new Size(670, 70);
             dataGridView1.TabIndex = 2;
             // 
-            // dataGridView2
+            // dataGridView3
             // 
-            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView2.Location = new Point(12, 127);
-            dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(670, 71);
-            dataGridView2.TabIndex = 3;
+            dataGridView3.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView3.Location = new Point(12, 127);
+            dataGridView3.Name = "dataGridView3";
+            dataGridView3.Size = new Size(670, 71);
+            dataGridView3.TabIndex = 3;
             // 
             // label2
             // 
@@ -80,7 +83,7 @@
             // 
             // idTextBox
             // 
-            idTextBox.Location = new Point(714, 45);
+            idTextBox.Location = new Point(710, 62);
             idTextBox.Name = "idTextBox";
             idTextBox.Size = new Size(45, 23);
             idTextBox.TabIndex = 7;
@@ -88,7 +91,7 @@
             // label11
             // 
             label11.AutoSize = true;
-            label11.Location = new Point(714, 27);
+            label11.Location = new Point(710, 44);
             label11.Name = "label11";
             label11.Size = new Size(21, 15);
             label11.TabIndex = 8;
@@ -97,7 +100,7 @@
             // label12
             // 
             label12.AutoSize = true;
-            label12.Location = new Point(848, 27);
+            label12.Location = new Point(844, 44);
             label12.Name = "label12";
             label12.Size = new Size(38, 15);
             label12.TabIndex = 10;
@@ -105,7 +108,7 @@
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(773, 45);
+            textBox1.Location = new Point(769, 62);
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(113, 23);
             textBox1.TabIndex = 9;
@@ -113,7 +116,7 @@
             // 
             // deletebtn
             // 
-            deletebtn.Location = new Point(714, 140);
+            deletebtn.Location = new Point(710, 199);
             deletebtn.Name = "deletebtn";
             deletebtn.Size = new Size(172, 27);
             deletebtn.TabIndex = 11;
@@ -123,7 +126,7 @@
             // 
             // Updatebtn
             // 
-            Updatebtn.Location = new Point(714, 107);
+            Updatebtn.Location = new Point(710, 156);
             Updatebtn.Name = "Updatebtn";
             Updatebtn.Size = new Size(172, 27);
             Updatebtn.TabIndex = 12;
@@ -133,7 +136,7 @@
             // 
             // selectBtn
             // 
-            selectBtn.Location = new Point(714, 74);
+            selectBtn.Location = new Point(710, 114);
             selectBtn.Name = "selectBtn";
             selectBtn.Size = new Size(172, 27);
             selectBtn.TabIndex = 13;
@@ -143,19 +146,38 @@
             // 
             // button1
             // 
-            button1.Location = new Point(714, 173);
-            button1.Name = "Exportbtn";
+            button1.Location = new Point(710, 241);
+            button1.Name = "button1";
             button1.Size = new Size(172, 27);
             button1.TabIndex = 14;
             button1.Text = "Экспорттау";
             button1.UseVisualStyleBackColor = true;
             button1.Click += Export_Click;
             // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(12, 206);
+            label3.Name = "label3";
+            label3.Size = new Size(107, 15);
+            label3.TabIndex = 16;
+            label3.Text = "Жалпы ұпай саны";
+            // 
+            // dataGridView2
+            // 
+            dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView2.Location = new Point(12, 224);
+            dataGridView2.Name = "dataGridView2";
+            dataGridView2.Size = new Size(670, 71);
+            dataGridView2.TabIndex = 15;
+            // 
             // AdminPanel
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(908, 209);
+            ClientSize = new Size(908, 309);
+            Controls.Add(label3);
+            Controls.Add(dataGridView2);
             Controls.Add(button1);
             Controls.Add(selectBtn);
             Controls.Add(Updatebtn);
@@ -165,13 +187,15 @@
             Controls.Add(label11);
             Controls.Add(idTextBox);
             Controls.Add(label2);
-            Controls.Add(dataGridView2);
+            Controls.Add(dataGridView3);
             Controls.Add(dataGridView1);
             Controls.Add(label1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "AdminPanel";
-            Text = "Form1";
+            StartPosition = FormStartPosition.CenterScreen;
             Load += AdminPanel_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView3).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridView2).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -180,7 +204,7 @@
         #endregion
         private Label label1;
         private DataGridView dataGridView1;
-        private DataGridView dataGridView2;
+        private DataGridView dataGridView3;
         private Label label2;
         private TextBox idTextBox;
         private Label label11;
@@ -190,5 +214,7 @@
         private Button Updatebtn;
         private Button selectBtn;
         private Button button1;
+        private Label label3;
+        private DataGridView dataGridView2;
     }
 }

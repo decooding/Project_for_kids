@@ -186,7 +186,7 @@ namespace Project_for_kids.frm.Math
             pictureBox7.TabStop = false;
             pictureBox7.Click += pictureBox7_Click;
             // 
-            // MathNumber
+            // Numbers
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -206,8 +206,10 @@ namespace Project_for_kids.frm.Math
             Controls.Add(pictureBox1);
             Controls.Add(pictureBox3);
             DoubleBuffered = true;
-            Name = "MathNumber";
-            Text = "MathNumber";
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
+            Name = "Numbers";
+            StartPosition = FormStartPosition.CenterScreen;
+            Text = "Сандар";
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

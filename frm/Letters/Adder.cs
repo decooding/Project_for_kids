@@ -2,6 +2,7 @@
 using Project_for_kids.frm.panel;
 using System.Media;
 using static Project_for_kids.data.Auth;
+using static System.Formats.Asn1.AsnWriter;
 
 namespace Project_for_kids.frm.Letter
 {
@@ -72,7 +73,7 @@ namespace Project_for_kids.frm.Letter
                 }
                 else
                 {
-                    auth.SaveTestResults(counter, "Letter_res");
+                    auth.SaveTestResults(counter, "Letter_res", "1 деңгей");           
                     counter = 0;
                     currentQuestIndex = 0;
                 }

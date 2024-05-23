@@ -52,7 +52,7 @@ namespace WinApp.frm
 
                 if (counter == 6)
                 {
-                    auth.SaveTestResults(counter, "Math_res");
+                    auth.SaveTestResults(counter, "Math_res", "4  Деңгей");
                 }
                 else
                 {

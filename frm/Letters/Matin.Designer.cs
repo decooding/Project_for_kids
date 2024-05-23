@@ -130,7 +130,7 @@
             FormBorderStyle = FormBorderStyle.SizableToolWindow;
             Name = "Matin";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "6 деңгей";
+            Text = "5 деңгей";
             ((System.ComponentModel.ISupportInitialize)backbutton).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();

@@ -1,4 +1,6 @@
-﻿using System.Data.OleDb;
+﻿using System;
+using System.Data.OleDb;
+using System.Windows.Forms;
 
 namespace WinApp.frm.Login
 {
@@ -47,13 +49,15 @@ namespace WinApp.frm.Login
                 {
                     connection.Open();
 
-                    string insertQuery = @"INSERT INTO [User] ([Login], [FirstName], [LastName], [Age], [Password]) 
-               VALUES (?, ?, ?, ?, ?)";
-                    string insertResult = @"INSERT INTO [Result] ([id_res], [Math_res], [Letter_res]) 
-                        SELECT TOP 1 [id], 0, 0 FROM [User] WHERE [Login] = ?";
+                    string insertUserQuery = @"INSERT INTO [User] ([Login], [FirstName], [LastName], [Age], [Password]) 
+                                               VALUES (?, ?, ?, ?, ?)";
 
+                    string getUserIdQuery = @"SELECT [id] FROM [User] WHERE [Login] = ?";
 
-                    using (OleDbCommand command = new OleDbCommand(insertQuery, connection))
+                    string insertResultQuery = @"INSERT INTO [Result] ([id_res], [Math_res], [Letter_res]) 
+                                                 VALUES (?, 0, 0)";
+
+                    using (OleDbCommand command = new OleDbCommand(insertUserQuery, connection))
                     {
                         command.Parameters.AddWithValue("@p1", userlogin);
                         command.Parameters.AddWithValue("@p2", firstname);
@@ -62,14 +66,31 @@ namespace WinApp.frm.Login
                         command.Parameters.AddWithValue("@p5", userpassword);
 
                         command.ExecuteNonQuery();
+                    }
+
+                    // Получение идентификатора вновь добавленного пользователя
+                    int userId;
+                    using (OleDbCommand command = new OleDbCommand(getUserIdQuery, connection))
+                    {
+                        command.Parameters.AddWithValue("@p1", userlogin);
+                        object result = command.ExecuteScalar();
+                        userId = result != DBNull.Value ? Convert.ToInt32(result) : 0;
+                    }
+
+                    // Вставка начальных результатов в таблицу Result
+                    if (userId > 0)
+                    {
+                        using (OleDbCommand command = new OleDbCommand(insertResultQuery, connection))
+                        {
+                            command.Parameters.AddWithValue("@p1", userId);
+                            command.ExecuteNonQuery();
+                        }
 
                         MessageBox.Show("Қолданушы сәтті тіркелді.");
                     }
-
-                    using (OleDbCommand command = new OleDbCommand(insertResult, connection))
+                    else
                     {
-                        command.Parameters.AddWithValue("@p1", userlogin);
-                        command.ExecuteNonQuery();
+                        MessageBox.Show("Не удалось получить идентификатор пользователя.");
                     }
                 }
                 catch (Exception ex)
@@ -78,6 +99,5 @@ namespace WinApp.frm.Login
                 }
             }
         }
-
     }
 }

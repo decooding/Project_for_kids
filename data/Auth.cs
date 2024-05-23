@@ -20,7 +20,6 @@ namespace Project_for_kids.data
         public static int LetterBall { get; set; }
 
         private readonly string connectionString = @"Provider=Microsoft.ACE.OLEDB.12.0;Data Source=base.accdb";
-
         private Stopwatch stopwatch;
         private SoundPlayer soundPlayer;
 
@@ -43,21 +42,19 @@ namespace Project_for_kids.data
                     using (OleDbCommand selectCommand = new OleDbCommand(selectQuery, connection))
                     {
                         selectCommand.Parameters.AddWithValue("@Id", Id);
-
                         object currentScore = selectCommand.ExecuteScalar();
-
                         currentValue = (currentScore != DBNull.Value) ? Convert.ToInt32(currentScore) : 0;
                     }
                 }
             }
             catch (OleDbException ex)
             {
-                MessageBox.Show("Ошибка базы данных: " + ex.Message);
+                MessageBox.Show("Database error: " + ex.Message);
             }
             return currentValue;
         }
 
-        public void SaveTestResults(int score, string table)
+        public void SaveTestResults(int score, string category, string levelName)
         {
             try
             {
@@ -65,43 +62,57 @@ namespace Project_for_kids.data
                 {
                     connection.Open();
 
-                    string selectQuery = $"SELECT [{table}] FROM [Result] WHERE [id_res] = ?";
+                    string scoreColumn = category == "Math_res" ? "Math_res" : "letter_res";
+
+                    string selectQuery = $"SELECT [{scoreColumn}] FROM [Result] WHERE [id_res] = ?";
+                    int currentScore = 0;
                     using (OleDbCommand selectCommand = new OleDbCommand(selectQuery, connection))
                     {
-                        selectCommand.Parameters.AddWithValue("@p1", Id);
-                        object currentScore = selectCommand.ExecuteScalar();
+                        selectCommand.Parameters.AddWithValue("@Id", Id);
+                        object result = selectCommand.ExecuteScalar();
+                        currentScore = (result != DBNull.Value) ? Convert.ToInt32(result) : 0;
+                    }
 
-                        int currentValue = (currentScore != DBNull.Value) ? Convert.ToInt32(currentScore) : 0;
+                    int newScore = currentScore + score;
+                    string updateQuery = $"UPDATE [Result] SET [{scoreColumn}] = ? WHERE [id_res] = ?";
+                    using (OleDbCommand updateCommand = new OleDbCommand(updateQuery, connection))
+                    {
+                        updateCommand.Parameters.AddWithValue("@p1", newScore);
+                        updateCommand.Parameters.AddWithValue("@p2", Id);
+                        updateCommand.ExecuteNonQuery();
+                    }
 
-                        int newScore = currentValue + score;
+                    stopwatch.Stop();
+                    TimeSpan elapsed = stopwatch.Elapsed;
+                    string elapsedTime = elapsed.ToString(@"mm\:ss");
 
-                        string updateQuery = $"UPDATE [Result] SET [{table}] = ? WHERE [id_res] = ?";
-                        using (OleDbCommand updateCommand = new OleDbCommand(updateQuery, connection))
+                    string insertQuery = "INSERT INTO [lvl] ([user_id], [category_lvl], [name_lvl], [score_lvl], [time_lvl]) VALUES (?, ?, ?, ?, ?)";
+                    using (OleDbCommand insertCommand = new OleDbCommand(insertQuery, connection))
+                    {
+                        insertCommand.Parameters.AddWithValue("@user_id", Id);
+                        insertCommand.Parameters.AddWithValue("@category", category);
+                        insertCommand.Parameters.AddWithValue("@level_name", levelName);
+                        insertCommand.Parameters.AddWithValue("@score", score);
+                        insertCommand.Parameters.AddWithValue("@elapsed_time", elapsedTime);
+
+                        int rowsAffected = insertCommand.ExecuteNonQuery();
+                        if (rowsAffected > 0)
                         {
-                            updateCommand.Parameters.AddWithValue("@p1", newScore);
-                            updateCommand.Parameters.AddWithValue("@p2", Id);
-
-                            int rowsAffected = updateCommand.ExecuteNonQuery();
-                            if (rowsAffected > 0)
-                            {
-                                stopwatch.Stop();
-                                TimeSpan elapsed = stopwatch.Elapsed;
-                                soundPlayer = new SoundPlayer(@$"{GFold.GPath}resource\sound\finish.wav");
-                                soundPlayer.Play();
-                                MessageBox.Show($"Құттықтайм!\n Барлық тапсырманы сәтті өттіңіз\n Орындау уақыты: {elapsed:mm\\:ss}");
-                                stopwatch.Reset();
-                            }
-                            else
-                            {
-                                MessageBox.Show("Не удалось сохранить результаты теста");
-                            }
+                            soundPlayer = new SoundPlayer($@"{GFold.GPath}resource\sound\finish.wav");
+                            soundPlayer.Play();
+                            MessageBox.Show($"Құттықтаймын!\n Сіз деңгейді сәтті өттіңіз!\n Өткен уақыт: {elapsed:mm\\:ss}");
+                            stopwatch.Reset();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Тест қотындысы сақталмады :(");
                         }
                     }
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Ошибка: " + ex.Message);
+                MessageBox.Show("Error: " + ex.Message);
             }
         }
     }

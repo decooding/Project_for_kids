@@ -132,6 +132,7 @@
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(pictureBox1);
+            FormBorderStyle = FormBorderStyle.FixedToolWindow;
             Name = "LogIn";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "LogIn";

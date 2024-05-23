@@ -69,7 +69,7 @@
             // MediaPlayer1
             // 
             MediaPlayer1.Enabled = true;
-            MediaPlayer1.Location = new Point(328, 15);
+            MediaPlayer1.Location = new Point(322, 12);
             MediaPlayer1.Name = "MediaPlayer1";
             MediaPlayer1.OcxState = (AxHost.State)resources.GetObject("MediaPlayer1.OcxState");
             MediaPlayer1.Size = new Size(650, 400);

@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\Project_for_kids\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{351CA59C-47C2-4308-998A-46D8733C2A55}|Project_for_kids.csproj|g:\\project_for_kids\\frm\\panel\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{351CA59C-47C2-4308-998A-46D8733C2A55}|Project_for_kids.csproj|solutionrelative:frm\\panel\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351CA59C-47C2-4308-998A-46D8733C2A55}|Project_for_kids.csproj|g:\\project_for_kids\\frm\\panel\\adminsubpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{351CA59C-47C2-4308-998A-46D8733C2A55}|Project_for_kids.csproj|solutionrelative:frm\\panel\\adminsubpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351CA59C-47C2-4308-998A-46D8733C2A55}|Project_for_kids.csproj|g:\\project_for_kids\\frm\\panel\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351CA59C-47C2-4308-998A-46D8733C2A55}|Project_for_kids.csproj|solutionrelative:frm\\panel\\adminpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{351CA59C-47C2-4308-998A-46D8733C2A55}|Project_for_kids.csproj|g:\\project_for_kids\\data\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{351CA59C-47C2-4308-998A-46D8733C2A55}|Project_for_kids.csproj|solutionrelative:data\\auth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AdminSubPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "G:\\Project_for_kids\\frm\\panel\\AdminSubPanel.cs",
+              "RelativeDocumentMoniker": "frm\\panel\\AdminSubPanel.cs",
+              "ToolTip": "G:\\Project_for_kids\\frm\\panel\\AdminSubPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "frm\\panel\\AdminSubPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T21:17:13.892Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminPanel.cs",
+              "DocumentMoniker": "G:\\Project_for_kids\\frm\\panel\\AdminPanel.cs",
+              "RelativeDocumentMoniker": "frm\\panel\\AdminPanel.cs",
+              "ToolTip": "G:\\Project_for_kids\\frm\\panel\\AdminPanel.cs",
+              "RelativeToolTip": "frm\\panel\\AdminPanel.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAuwCEAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T21:11:57.718Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AdminPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "DocumentMoniker": "G:\\Project_for_kids\\frm\\panel\\AdminPanel.cs",
+              "RelativeDocumentMoniker": "frm\\panel\\AdminPanel.cs",
+              "ToolTip": "G:\\Project_for_kids\\frm\\panel\\AdminPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "RelativeToolTip": "frm\\panel\\AdminPanel.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T21:11:51.329Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u0438\u0440\u043E\u0432\u0430\u043D\u0438\u0435]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Auth.cs",
+              "DocumentMoniker": "G:\\Project_for_kids\\data\\Auth.cs",
+              "RelativeDocumentMoniker": "data\\Auth.cs",
+              "ToolTip": "G:\\Project_for_kids\\data\\Auth.cs",
+              "RelativeToolTip": "data\\Auth.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAYwF4AAABPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T21:09:23.681Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

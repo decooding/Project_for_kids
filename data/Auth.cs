@@ -86,7 +86,7 @@ namespace Project_for_kids.data
                     TimeSpan elapsed = stopwatch.Elapsed;
                     string elapsedTime = elapsed.ToString(@"mm\:ss");
 
-                    string insertQuery = "INSERT INTO [lvl] ([user_id], [category_lvl], [name_lvl], [score_lvl], [time_lvl]) VALUES (?, ?, ?, ?, ?)";
+                    string insertQuery = "INSERT INTO [lvl] ([user_id], [category_lvl], [name_lvl], [score_lvl], [time_lvl], [date_lvl]) VALUES (?, ?, ?, ?, ?, ?)";
                     using (OleDbCommand insertCommand = new OleDbCommand(insertQuery, connection))
                     {
                         insertCommand.Parameters.AddWithValue("@user_id", Id);
@@ -94,6 +94,7 @@ namespace Project_for_kids.data
                         insertCommand.Parameters.AddWithValue("@level_name", levelName);
                         insertCommand.Parameters.AddWithValue("@score", score);
                         insertCommand.Parameters.AddWithValue("@elapsed_time", elapsedTime);
+                        insertCommand.Parameters.AddWithValue("@date", DateTime.Now);
 
                         int rowsAffected = insertCommand.ExecuteNonQuery();
                         if (rowsAffected > 0)

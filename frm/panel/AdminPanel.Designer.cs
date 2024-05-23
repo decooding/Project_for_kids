@@ -168,14 +168,14 @@
             dataGridView2.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView2.Location = new Point(12, 224);
             dataGridView2.Name = "dataGridView2";
-            dataGridView2.Size = new Size(670, 71);
+            dataGridView2.Size = new Size(670, 96);
             dataGridView2.TabIndex = 15;
             // 
             // AdminPanel
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(908, 309);
+            ClientSize = new Size(908, 372);
             Controls.Add(label3);
             Controls.Add(dataGridView2);
             Controls.Add(button1);

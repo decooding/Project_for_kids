@@ -29,7 +29,7 @@ namespace WinApp.frm.panel
                 {
                     connection.Open();
 
-                    userSelectCommand = new OleDbCommand("SELECT * FROM [User]", connection);
+                    userSelectCommand = new OleDbCommand("SELECT [id], [Login], [FirstName], [LastName], [Age] FROM [User]", connection);
                     resultSelectCommand = new OleDbCommand("SELECT * FROM [Result]", connection);
                     levelSelectCommand = new OleDbCommand("SELECT * FROM [lvl]", connection);
 
@@ -45,7 +45,7 @@ namespace WinApp.frm.panel
                     resultAdapter.Fill(resultDataSet, "ResultTable");
                     levelAdapter.Fill(lvlDataSet, "LevelTable");
 
-                    dataGridView1.DataSource = userDataSet.Tables["UserTable"];
+                    dataGridView1.DataSource = userDataSet.Tables["UserTable"].DefaultView;
                     dataGridView3.DataSource = resultDataSet.Tables["ResultTable"];
                     dataGridView2.DataSource = lvlDataSet.Tables["LevelTable"];
                 }
@@ -53,6 +53,7 @@ namespace WinApp.frm.panel
                 {
                     MessageBox.Show(ex.Message);
                 }
+
             }
         }
 

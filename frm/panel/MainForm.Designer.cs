@@ -43,7 +43,7 @@
             button4.BackColor = Color.Transparent;
             button4.FlatStyle = FlatStyle.Flat;
             button4.ForeColor = Color.Transparent;
-            button4.Location = new Point(-1, 491);
+            button4.Location = new Point(2, 517);
             button4.Name = "button4";
             button4.Size = new Size(39, 39);
             button4.TabIndex = 3;
@@ -58,15 +58,16 @@
             label1.ForeColor = SystemColors.WindowText;
             label1.Location = new Point(15, 16);
             label1.Name = "label1";
-            label1.Size = new Size(0, 25);
+            label1.Size = new Size(79, 25);
             label1.TabIndex = 5;
+            label1.Text = "Ұпай: 0";
             // 
             // button3
             // 
             button3.BackColor = Color.Green;
             button3.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button3.ForeColor = SystemColors.ControlLightLight;
-            button3.Location = new Point(103, 281);
+            button3.Location = new Point(98, 311);
             button3.Name = "button3";
             button3.Size = new Size(325, 53);
             button3.TabIndex = 8;
@@ -80,7 +81,7 @@
             button7.FlatStyle = FlatStyle.Flat;
             button7.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button7.ForeColor = SystemColors.ButtonHighlight;
-            button7.Location = new Point(103, 125);
+            button7.Location = new Point(98, 155);
             button7.Name = "button7";
             button7.Size = new Size(325, 47);
             button7.TabIndex = 6;
@@ -93,7 +94,7 @@
             button8.BackColor = Color.Red;
             button8.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button8.ForeColor = SystemColors.ControlLightLight;
-            button8.Location = new Point(103, 435);
+            button8.Location = new Point(98, 465);
             button8.Name = "button8";
             button8.Size = new Size(325, 53);
             button8.TabIndex = 11;
@@ -107,7 +108,7 @@
             button10.FlatStyle = FlatStyle.Flat;
             button10.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button10.ForeColor = SystemColors.ButtonHighlight;
-            button10.Location = new Point(103, 364);
+            button10.Location = new Point(98, 394);
             button10.Name = "button10";
             button10.Size = new Size(325, 47);
             button10.TabIndex = 9;
@@ -120,7 +121,7 @@
             button1.BackColor = Color.Green;
             button1.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 204);
             button1.ForeColor = SystemColors.ControlLightLight;
-            button1.Location = new Point(103, 201);
+            button1.Location = new Point(98, 231);
             button1.Name = "button1";
             button1.Size = new Size(325, 53);
             button1.TabIndex = 13;
@@ -134,7 +135,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Comic Sans MS", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 204);
             label2.ForeColor = Color.Red;
-            label2.Location = new Point(46, 16);
+            label2.Location = new Point(59, 73);
             label2.Name = "label2";
             label2.Size = new Size(428, 49);
             label2.TabIndex = 14;
@@ -147,7 +148,7 @@
             BackColor = SystemColors.Highlight;
             BackgroundImage = Properties.Resources._3b54191d83179b231a20125790af21b5;
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(510, 537);
+            ClientSize = new Size(510, 558);
             Controls.Add(label2);
             Controls.Add(button1);
             Controls.Add(button8);

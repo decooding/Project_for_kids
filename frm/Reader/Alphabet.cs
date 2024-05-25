@@ -17,7 +17,7 @@ namespace WinApp.frm
 
         void FunCallSound(string soundName)
         {
-            string soundFilePath = @$"{GFold.GPath}resource\sound\alphabet\{soundName}.wav";
+            string soundFilePath = @$"{GFold.GPath}resource\sound\alippe\{soundName}.wav";
             soundPlayer = new SoundPlayer(soundFilePath);
             soundPlayer.Play();
         }
